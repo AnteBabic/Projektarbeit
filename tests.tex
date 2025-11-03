@@ -1,0 +1,101 @@
+\lstdefinelanguage{XML}{
+  morestring=[b]",
+  morecomment=[s]{<!--}{-->},
+  stringstyle=\color{red},
+  identifierstyle=\color{blue},
+  morekeywords={xmlns,version,type}
+}
+
+\lstset{
+  language=XML,
+  basicstyle=\ttfamily\tiny,    % kleine Schrift
+  numbers=left,
+  numberstyle=\tiny,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  breaklines=true,
+  frame=single,
+  captionpos=b
+}
+
+\chapter{Tests} \label{chap:Tests}
+In diesem Kapitel werden die Funktionstests des Generators mithilfe von JUnit vorgestellt. 
+Dabei wird insbesondere auf die beispielhaften Testfallausgaben sowie auf die Korrektheit und Vollständigkeit der generierten Testfälle eingegangen.
+
+\section{Funktionstests des Generators (JUnit Tests)}
+Um die Funktionsweise des Generators zu überprüfen, wurden JUnit-Tests eingesetzt.
+Mit diesen Tests kann kontrolliert werden ob die Eingabedaten aus \ac{xml} und Excel Dateien korrekt eingelesen und in die vorgesehene interne Struktur übertragen werden. 
+Zusätzlich wurde getestet, 
+ob die erzeugten Testfälle dem festgelegten Schema entsprechen und die Ausgaben vollständig und fehlerfrei sind. 
+Die Tests berücksichtigen verschiedene Szenarien, wie beispielsweise das Einlesen unterschiedlicher \ac{xml} Elemente mit variierenden Attributen sowie Excel Dateien mit diversen Zellinhalten. 
+Die Testfälle sind so aufgebaut, dass sie die Vollständigkeit und Korrektheit der eingelesenen Daten sicherstellen. 
+Hierbei wird geprüft, ob alle Werte korrekt den jeweiligen internen Objekten zugeordnet werden. 
+Die automatisierte Ausführung der Tests ermöglicht eine schnelle und wiederholbare Überprüfung der Funktionsfähigkeit des Generators, sodass nach Änderungen am Code zeitnah die Zuverlässigkeit des Systems bestätigt werden kann.
+
+\section{Beispielhafte Testfallausgaben} \label{name: Beispielhafte Testfallausgaben}
+Um die Arbeitsweise des Generators besser verstehen zu können, werden im Folgenden einige Beispiele der erzeugten Testfälle gezeigt. 
+Diese Beispiele machen deutlich, wie die Testfälle aufgebaut sind und welche Informationen sie enthalten. 
+Jeder Testfall hat dabei eine eindeutige laufende Nummer, eine kurze Beschreibung und die dazugehörigen Eingabedaten.
+Die eingelesenen Informationen sind im DatenTeil zu finden, GW1, GW2 und GW4 stehen für die einzelnen Formulare innerhalb der Erklärung. 
+Die Feldkennnummer wird mit 'nr' abgekürzt und Felder ohne Kennnummer bekommen ihre Bezeichung als Feldkennnummer.
+
+Zur Veranschaulichung beispielhafter Testfallausgaben wurde \ac{xml} verwendet, um den Aufbau und die Struktur darzustellen. \newline
+
+\begin{lstlisting}[caption={Beispielhafte Testfallausgaben in XML}] 
+<Elster xmlns="http://www.elster.de/elsterxml/schema/v11">
+<Verfahren>ElsterErklaerung</Verfahren>
+<DatenArt>GrundSteuerBW</DatenArt>
+<DatenTeil>
+<Erklaerung LfdNr="4">
+<GW1>
+<Feld nr="lfdNr" wert="4"/>
+<Feld nr="Bezeichnung" wert="Sachbearbeitung"/>
+<Feld nr="Kurzbeschreibung" wert="Bauerwartungsland"/>
+<Feld nr="Stichtag" wert="Sat Jan 01 00:00:00 CET 2022"/>
+<Feld nr="Aktenzeichen" wert="083500120680040016"/>
+<Feld nr="Finanzamt" wert="Karlsruhe-Stadt"/>
+<Feld nr="E7401124" wert="Adalbert-Stifter-Straße"/>
+<Feld nr="E7401125" wert="9"/>
+<Feld nr="E7401131" wert="Wohnungseigentum 4"/>
+<Feld nr="E7401121" wert="76199"/>
+<Feld nr="E7401122" wert="Karlsruhe"/>
+<Feld nr="E7401141" wert="Gaggenau"/>
+<Feld nr="E7411702" wert="Bei Rückfragen bitte telefonisch am Vormittag 0761123456"/>
+<Feld nr="lfdNr2" wert="001"/>
+<Feld nr="E7404518" wert="14.03.1967"/>
+<Feld nr="E7404513" wert="Tom"/>
+<Feld nr="E7404511" wert="Maus"/>
+<Feld nr="E7404524" wert="Im Efeu"/>
+<Feld nr="E7404571" wert="2"/>
+<Feld nr="lfdNr3" wert="002"/>
+<Feld nr="E74045182" wert="15.04.1967"/>
+<Feld nr="E74045132" wert="Jerry"/>
+<Feld nr="E74045112" wert="Maus "/>
+<Feld nr="E74045242" wert="Im Näpfle"/>
+<Feld nr="E74045252" wert="5"/>
+<Feld nr="E74045402" wert="74078"/>
+<Feld nr="E74045222" wert="Heilbronn"/>
+</GW1>
+<GW2>
+<Feld nr="E7421322" wert="1"/>
+<Feld nr="E7403010" wert="71"/>
+<Feld nr="E7403011" wert="730"/>
+</GW2>
+<GW4/>
+</Erklaerung>
+</DatenTeil>
+</Elster>
+\end{lstlisting}
+
+
+%\section{Korrektheit und Vollständigkeit der Testfälle}
+%Bei der Arbeit mit Testfällen ist es besonders wichtig, dass alle Angaben korrekt und vollständig sind. 
+%Korrektheit bedeutet, dass die eingetragenen Werte genau den Daten aus der Quelle entsprechen und keine Fehler enthalten.
+%So muss zum Beispiel die laufende Nummer korrekt übernommen werden um korrekt wiedergegeben werden zu können.
+%Die Vollständigkeit bezieht sich darauf, das alle Pflichtfelder eines Testfalls ausgefüllt sind. 
+%Fehlende oder unvollständige Angaben können dazu führen, dass Testfälle nicht korrekt ausgeführt werden oder im Testprozess Fehler auftreten.
+%Ein weiterer wichtiger Punkt ist, dass die Testfälle klar und übersichtlich aufgebaut sind. Nur so können die Testfälle bei Bedarf problemlos kontrolliert werden.
+%Eine einheitliche Struktur  hilft nicht nur den Nutzern sondern auch dem Generator, 
+%da so Daten ohne schwierigkeiten verarbeitet werden können.
+

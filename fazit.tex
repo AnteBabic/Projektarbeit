@@ -1,0 +1,55 @@
+\chapter{Fazit und Ausblick} \label{chap:Fazit und Ausblick}
+Dieses Kapitel fasst die Ergebnisse der Arbeit zusammen und zeigt, welche Möglichkeiten sich für die Weiterentwicklung des Generators anbieten.
+ 
+\section{Zusammenfassung der Arbeit}
+In dieser Arbeit wurde ein Testfallgenerator für steuerliche Anwendungen entwickelt. 
+Ziel war es, ein Programm zu entwickeln, das automatisch Testfälle aus vorhandenen \ac{xml} und Excel Dateien erzeugt. 
+Damit sollte die Testfallerstellung schneller, einfacher und weniger fehleranfällig werden, da manuelle Eingaben oft aufwendig sind und zu Fehlern führen können.
+
+Am Anfang der Arbeit wurden die Anforderungen an den Generator festgelegt. 
+Dazu gehörte, dass die Daten aus den Dateien korrekt übernommen werden, dass die erzeugten Testfälle immer gleich aufgebaut sind und dass auch Sonderfälle wie fehlende Eingaben oder falsche Werte berücksichtigt werden. 
+Die Umsetzung erfolgte mit Java. Für die Verarbeitung von \ac{xml} Dateien wurden die Werkzeuge \ac{jaxb} und \ac{dom} eingesetzt, während Excel Dateien mit der Bibliothek Apache POI gelesen wurden. 
+Alle Testfälle werden in einer einheitlichen Struktur gespeichert, sodass sie später problemlos für Tests genutzt werden können.
+
+Die Logik des Generators ist klar aufgebaut. Zuerst werden die Dateien eingelesen und überprüft. 
+Danach werden daraus Testfälle erstellt. Diese werden durchnummeriert und in einem passenden Format gespeichert. 
+Auf diese Weise entstehen viele Testfälle in kurzer Zeit, die für verschiedene Szenarien genutzt werden können. 
+%Mithilfe von JUnit-Tests wurde geprüft, ob der Generator die Daten korrekt verarbeitet und ob die Testfälle vollständig sind. 
+
+%Zusammenfassend lässt sich sagen, dass der Generator die gestellten Anforderungen erfüllt und die Testfallerstellung erleichtert. 
+%Er sorgt dafür, dass Testfälle schnell, zuverlässig und nachvollziehbar erstellt werden können. 
+Der Testfallgenerator erfüllt die wesentlichen Anforderungen und unterstützt die schnellere sowie fehlerfreie Erstellung von Testfällen.
+Die automatische Verarbeitung von \ac{xml} und Excel Dateien spart Zeit und erleichtert die Arbeit.
+
+Trotzdem gibt es auch Schwächen. Der Testfallgenerator kann keine fehlerhaften Testfälle erkennen oder gezielt erstellen. 
+Das kann ein Nachteil sein, wenn man testen will, wie ein System auf falsche Eingaben reagiert. Außerdem unterstützt der Testfallgenerator nur \ac{xml} und Excel, andere Formate wie CSV oder ähnliche fehlen. 
+Auch bei sehr großen Dateien könnte die Leistung besser und effizienter sein.
+Die Bedienbarkeit des Testfallgeneratos ist noch ausbaufähig, da die Benutzerführung teilweise unübersichtlich ist und dadurch die Bedienung erschwert wird.
+
+Insgesamt ist der Testfallgenerator eine gute Unterstützung, doch vor allem in der Fehlerbehandlung und der Flexibilität, gibt es noch Verbesserungsmöglichkeiten.
+
+\section{Ideen für Weiterentwicklung}
+Der Testfallgenerator erfüllt die in dieser Arbeit gesetzten Anforderungen, dennoch gibt es verschiedene Möglichkeiten, das System in Zukunft zu erweitern und an neue Anforderungen anzupassen. 
+Solche Weiterentwicklungen sind sinnvoll, um den praktischen Nutzen des Generators zu erhöhen und den Einsatzbereich zu vergrößern.
+
+Ein erster Ansatz wäre die Unterstützung weiterer Eingabeformate. Derzeit verarbeitet der Generator \ac{xml} und Excel Dateien. 
+In vielen Unternehmen werden jedoch auch andere Formate wie \ac{csv} Dateien oder Datenbanken genutzt. Wenn der Generator diese Quellen ebenfalls einlesen könnte, würde er deutlich flexibler einsetzbar sein. 
+Auch eine Kombination verschiedener Datenquellen wäre denkbar, um Testfälle aus unterschiedlichen Systemen zusammenzuführen.
+
+Ein weiterer wichtiger Punkt ist die Anbindung an automatisierte Testumgebungen. 
+Aktuell erzeugt der Generator die Testfälle, die anschließend manuell in Testsysteme eingebunden werden müssen. 
+Würde eine direkte Schnittstelle zu gängigen Test Frameworks bestehen, könnten die erzeugten Testfälle automatisch ausgeführt werden. 
+Dadurch lässt sich der gesamte Testprozess beschleunigen und effizienter gestalten.
+Darüber hinaus könnte die Bedienbarkeit des Generators verbessert werden. 
+Bislang läuft die Steuerung hauptsächlich über den Code. Eine grafische Benutzeroberfläche würde den Umgang deutlich vereinfachen, da auch Personen ohne tiefere Programmierkenntnisse den Generator nutzen könnten. 
+Eine solche Oberfläche könnte zum Beispiel das Auswählen der Eingabedateien, das Festlegen von Parametern oder das Anzeigen der generierten Testfälle erleichtern.
+Auch die Logik zur Erzeugung von Sonder und Fehlerfällen könnte weiter ausgebaut werden. 
+Momentan werden grundlegende Fälle berücksichtigt, wie fehlende Eingaben oder falsche Werte. 
+In Zukunft wäre es möglich, komplexere Szenarien zu erzeugen, die realistische Fehlerbilder besser abbilden. 
+So könnten beispielsweise Abhängigkeiten zwischen Eingabefeldern geprüft oder seltene Spezialfälle berücksichtigt werden. Dies würde die Qualität der erzeugten Tests weiter erhöhen.
+Zusätzlich ließe sich überlegen, den Generator modular zu gestalten. 
+So könnten einzelne Teile wie die Verarbeitung bestimmter Datenformate oder die Logik zur Testfallerstellung leicht ausgetauscht oder erweitert werden. 
+Damit wäre der Generator langfristig besser anpassbar und könnte schrittweise an neue Anforderungen angepasst werden.
+
+Insgesamt bieten sich damit mehrere sinnvolle Ansätze für die Weiterentwicklung. Die Unterstützung weiterer Formate, die Anbindung an automatisierte Tests, eine bessere Bedienbarkeit und ein Ausbau der Testlogik. 
+Mit diesen Erweiterungen könnte der Generator nicht nur breiter eingesetzt werden, sondern auch einen noch größeren Beitrag zur Qualitätssicherung leisten.

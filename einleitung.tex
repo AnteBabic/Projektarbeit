@@ -1,0 +1,69 @@
+\chapter{Einleitung} \label{chap:Einleitung}
+Dieses Kapitel dient dem Einstieg in die vorliegende Projektarbeit. 
+Es erläutert das fachliche sowie organisatorische Umfeld, die Motivation für die Themenwahl und beschreibt die Zielsetzung der Arbeit.  
+
+
+\section{Betriebliches Umfeld} \label{sec:AufbauFunktion}
+%Im folgenden Kapitel werden zuerst die Aufgaben und Zuständigkeiten der \ac{ofdbw} erläutert, im Anschluss wird die Funktion des \ac{lzfd} beschrieben.
+
+%\subsection{Aufgaben und Zuständigkeit der Oberfinanzdirektion Baden-Württemberg}
+Die \ac{ofdbw} ist die Landesmittelbehörde der Steuerverwaltung. 
+Sie nimmt die Dienst- und Fachaufsicht über alle 65 Finanzämter in Baden-Württemberg wahr und koordiniert deren organisatorische und fachliche Ausrichtung.
+Zusätzlich ist sie für die Landesoberkasse zuständig sowie für die staatlichen Hochbauämter, die im Bereich des Bundesbaus tätig sind.
+Ein weiterer Aufgabenbereich umfasst die Steuerung von Organisation, Personal, Haushalt innerhalb der Steuerverwaltung.
+Die Behörde spielt außerdem eine wichtige Rolle bei der Weiterentwicklung und Digitalisierung von Prozessen, Standards und IT-Systemen in der Finanzverwaltung \cite{ofdBW2025}.
+
+%\subsection{Das Landeszentrum für Datenverarbeitung (LZfD)}
+Das \ac{lzfd} ist eine Abteilung innerhalb der \ac{ofdbw} und fungiert als zentraler IT-Dienstleister der Steuerverwaltung in Baden-Württemberg.
+Es betreibt und betreut eine Vielzahl von IT-Anwendungen, die in den Finanzämtern eingesetzt werden, 
+etwa Systeme zur Steuerveranlagung oder zur elektronischen Kommunikation mit Bürgerinnen und Bürgern.
+Darüber hinaus unterstützt das \ac{lzfd} Fachbereiche bei der Umsetzung neuer Softwarelösungen, 
+stellt die technische Infrastruktur bereit und ist für Themen IT-Sicherheit und Datenpflege zuständig \cite{lzfd2025}.
+Das \ac{lzfd} ist in sieben verschiedene EDV Abteilungen aufgeteilt.
+
+\begin{itemize}
+    \item EDV 1 Zentrale Dienste, Querschnittsaufgaben
+    \item EDV 2 \ac{ae}
+    \item EDV 3 Applikationsmanagement
+    \item EDV 4 Systembetrieb und Basisdienste 
+    \item EDV 5 Service
+    \item EDV 6 KONSENS, Architektur Projekte und Test 
+    \item EDV 7 \ac{sitif}
+\end{itemize}
+\bigbreak
+Die Abteilung EDV 2 der Oberfinanzdirektion Baden-Württemberg entwickelt und betreut IT-Anwendungen für die Finanzämter des Landes. 
+Diese unterstützen die Verwaltung bei der korrekten Erfassung, Verarbeitung und Auswertung von Steuerdaten zur effizienten Erfüllung steuerlicher Aufgaben. 
+Ein zentrales Projekt ist das länderübergreifende Vorhaben KONSENS, das eine einheitliche Softwarelösung zur Optimierung der Arbeitsprozesse in den Finanzämtern bereitstellt \cite{konsens2025}.
+
+Die Unterabteilung EDV 211 entwickelt und pflegt die Software zur Bearbeitung der Grundsteuererklärungen nach den aktuellen gesetzlichen Vorgaben und sorgt für eine reibungslose Einführung der neuen Regelungen \cite{grundsteuerneu2025}.
+Zudem passt EDV 211 die Anwendungen konstant an geänderte rechtliche Anforderungen an und arbeitet eng mit anderen IT-Abteilungen, insbesondere im Bereich IT-Sicherheit, 
+zusammen, um den Schutz sensibler Daten und die Systemstabilität zu gewährleisten.
+
+\section{Motivation}
+
+Mit der Einführung der neuen Grundsteuerregelung in Deutschland müssen zahlreiche Grundsteuererklärungen digital erfasst und verarbeitet werden. 
+Die dafür eingesetzte Software muss zuverlässig arbeiten und in der Lage sein, eine große Bandbreite unterschiedlicher Eingabekombinationen korrekt zu verarbeiten.
+Die bisherige manuelle Erstellung von Testfällen ist in diesem Zusammenhang sehr zeitaufwendig und risikoanfällig, so dass wichtige Szenarien unberücksichtigt bleiben. 
+Bereits geringe Abweichungen in der Berechnung können zu fehlerhaften Steuerbescheiden führen und damit zusätzlichen Aufwand für Verwaltung sowie Bürgerinnen und Bürgern verursachen.
+Ein automatisierter Testfallgenerator stellt hierfür eine effiziente Lösung dar, um die Software ausreichend zu prüfen und Fehler bei den Berechnungen frühzeitig zu erkennen. 
+Er kann in kurzer Zeit eine Vielzahl von Testfällen erzeugen.
+Auf diese Weise lassen sich Fehler frühzeitig erkennen, die Testabdeckung erhöhen und der gesamte Testprozess deutlich beschleunigen.
+
+\section{Zielsetzung der Arbeit}
+
+In dieser Projektarbeit wird eine Software entwickelt, die automatisch Testfälle erstellt um die korrekte Verarbeitung von Steuererklärungen zu überprüfen. 
+Oft werden solche Testfälle noch manuell angelegt. Dies ist zeitaufwendig, erfordert spezielles Fachwissen und kann zu Fehlern führen. 
+Die geplante Lösung soll diesen Prozess vereinfachen und beschleunigen.
+Die Software nutzt strukturierte Eingabedaten, zum Beispiel aus \ac{xml} oder \hypertarget{importantword}{Excel Dateien}\footnote{Im Folgenden wird häufig von „\hyperlink{importantword}{Excel Dateien}“ gesprochen. Damit sind Dateien gemeint, die mit Microsoft Excel verarbeitet werden können, insbesondere die Formate .xlsx (Excel-Arbeitsmappen) sowie .csv (Comma-Separated Values). 
+Diese Definition umfasst sowohl native Excel-Dateien als auch tabellarische Textdateien, die häufig für den Datenaustausch verwendet werden.}. Diese enthalten alle wichtigen Informationen, erwartete Ausgaben und besondere Bedingungen. 
+Das Programm liest die Daten ein, prüft sie auf Vollständigkeit und wandelt sie in ein einheitliches Format um. Dieses Format kann direkt in gängigen Testumgebungen verwendet werden, ohne dass zusätzliche Anpassungen nötig sind.
+Ein Schwerpunkt liegt auf der einfachen Bedienung. 
+Die Anwendung soll auch von Personen genutzt werden können, die keine Programmierkenntnisse haben. 
+Über definierte Schnittstellen, wie etwa eine API, lässt sich das Programm problemlos in bestehende Testsysteme einbinden und nahtlos in vorhandene Arbeitsabläufe integrieren.
+
+Ziel ist es, den Aufwand für die Testfallerstellung deutlich zu verringern, den Testprozess effizienter zu gestalten und die Qualität der Steuerungssoftware langfristig zu sichern. 
+Durch die Automatisierung werden Fehlerquellen reduziert, Entwicklungszeiten verkürzt und die Testergebnisse zuverlässiger.
+
+
+\bigbreak
+

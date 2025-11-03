@@ -1,0 +1,552 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Basiswissen-OSINT}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=77ea7bbb092ea3d64cb69fe53756a1e0}{%
+           family={B.},
+           familyi={B\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {BoD - Books on Demand}%
+      }
+      \strng{namehash}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \strng{fullhash}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \strng{fullhashraw}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \strng{bibnamehash}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \strng{authorbibnamehash}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \strng{authornamehash}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \strng{authorfullhash}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \strng{authorfullhashraw}{77ea7bbb092ea3d64cb69fe53756a1e0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Basiswissen OSINT: Eine Einführung in Open Source Intelligence}
+      \field{year}{2023}
+    \endentry
+    \entry{SecurityTrendOSINT}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=3f77e9bd8a8df36224bad75258ec1c5a}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={Yong-Woon},
+           giveni={Y\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b871af84adbfe06713b2db0eab8f97bd}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Im-Yeong},
+           giveni={I\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=646394d773707aa8f7491a3ec87ca851}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hwankuk},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9fa2d72a0929d1e0d2b538264474bbb}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Hyejung},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69c67a7835bae411a48cf54967c18f39}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Donghyun},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4138aba357311bc529aca62c9a643ca7}
+      \strng{fullhash}{f75b675237cc18ea06a7d7c7089b26d8}
+      \strng{fullhashraw}{f75b675237cc18ea06a7d7c7089b26d8}
+      \strng{bibnamehash}{4138aba357311bc529aca62c9a643ca7}
+      \strng{authorbibnamehash}{4138aba357311bc529aca62c9a643ca7}
+      \strng{authornamehash}{4138aba357311bc529aca62c9a643ca7}
+      \strng{authorfullhash}{f75b675237cc18ea06a7d7c7089b26d8}
+      \strng{authorfullhashraw}{f75b675237cc18ea06a7d7c7089b26d8}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recently, users have used open-source intelligence (OSINT) to gather and obtain information regarding the data of interest. The advantage of using data gathered by OSINT is that security threats arising in cyberspace can be addressed. However, if a user uses data collected by OSINT for malicious purposes, information regarding the target of an attack can be gathered, which may lead to various cybercrimes, such as hacking, malware, and a denial-of-service attack. Therefore, from a cybersecurity point of view, it is important to positively use the data gathered by OSINT in a positive manner. If exploited in a negative manner, it is important to prepare countermeasures that can minimize the damage caused by cybercrimes. In this paper, the current status and security trends of OSINT will be explained. Specifically, we present security threats and cybercrimes that may occur if data gathered by OSINT are exploited by malicious users. Furthermore, to solve this problem, we propose security requirements that can be applied to the OSINT environment. The proposed security requirements are necessary for securely gathering and storing data in the OSINT environment and for securely accessing and using the data collected by OSINT. The goal of the proposed security requirements is to minimize the damage when cybercrimes occur in the OSINT environment.}
+      \field{journaltitle}{Wireless Communications and Mobile Computing}
+      \field{number}{1}
+      \field{title}{Current Status and Security Trend of OSINT}
+      \field{volume}{2022}
+      \field{year}{2022}
+      \field{pages}{1290129}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1155/2022/1290129
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1155/2022/1290129
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1155/2022/1290129
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1155/2022/1290129
+      \endverb
+    \endentry
+    \entry{GUI-Ionos}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bb5ee3f4945f24ad5b799c97c5bbb86c}{%
+           family={{Ionos Redaktion}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \strng{fullhash}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \strng{fullhashraw}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \strng{bibnamehash}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \strng{authorbibnamehash}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \strng{authornamehash}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \strng{authorfullhash}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \strng{authorfullhashraw}{bb5ee3f4945f24ad5b799c97c5bbb86c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{1}
+      \field{note}{(o\adddot~D\adddot)}
+      \field{title}{Was ist ein Graphical user interface (GUI)?}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-ein-gui/
+      \endverb
+      \verb{url}
+      \verb https://www.ionos.de/digitalguide/websites/web-entwicklung/was-ist-ein-gui/
+      \endverb
+    \endentry
+    \entry{GUI-Kranz}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=122e6850fec68929cb88e8fa1d685ee6}{%
+           family={{Jan-Dirk Kranz}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{122e6850fec68929cb88e8fa1d685ee6}
+      \strng{fullhash}{122e6850fec68929cb88e8fa1d685ee6}
+      \strng{fullhashraw}{122e6850fec68929cb88e8fa1d685ee6}
+      \strng{bibnamehash}{122e6850fec68929cb88e8fa1d685ee6}
+      \strng{authorbibnamehash}{122e6850fec68929cb88e8fa1d685ee6}
+      \strng{authornamehash}{122e6850fec68929cb88e8fa1d685ee6}
+      \strng{authorfullhash}{122e6850fec68929cb88e8fa1d685ee6}
+      \strng{authorfullhashraw}{122e6850fec68929cb88e8fa1d685ee6}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{5}
+      \field{title}{GUI - Definition, Bestandteile und Anforderungen}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://it-talents.de/it-wissen/gui/
+      \endverb
+      \verb{url}
+      \verb https://it-talents.de/it-wissen/gui/
+      \endverb
+    \endentry
+    \entry{Linux-Grundlagen}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=96022a43cc377931a3f46b15ae35eeb8}{%
+           family={Kofler},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Rheinwerk Computing}%
+      }
+      \strng{namehash}{96022a43cc377931a3f46b15ae35eeb8}
+      \strng{fullhash}{96022a43cc377931a3f46b15ae35eeb8}
+      \strng{fullhashraw}{96022a43cc377931a3f46b15ae35eeb8}
+      \strng{bibnamehash}{96022a43cc377931a3f46b15ae35eeb8}
+      \strng{authorbibnamehash}{96022a43cc377931a3f46b15ae35eeb8}
+      \strng{authornamehash}{96022a43cc377931a3f46b15ae35eeb8}
+      \strng{authorfullhash}{96022a43cc377931a3f46b15ae35eeb8}
+      \strng{authorfullhashraw}{96022a43cc377931a3f46b15ae35eeb8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Der Kofler - das Linux Standardwerk}
+      \field{year}{2023}
+    \endentry
+    \entry{UsingVirtualizationSolutions}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=24bece773e8873ff8f03d9a3eced56df}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Peng},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Consortium for Computing Sciences in Colleges}%
+      }
+      \strng{namehash}{24bece773e8873ff8f03d9a3eced56df}
+      \strng{fullhash}{24bece773e8873ff8f03d9a3eced56df}
+      \strng{fullhashraw}{24bece773e8873ff8f03d9a3eced56df}
+      \strng{bibnamehash}{24bece773e8873ff8f03d9a3eced56df}
+      \strng{authorbibnamehash}{24bece773e8873ff8f03d9a3eced56df}
+      \strng{authornamehash}{24bece773e8873ff8f03d9a3eced56df}
+      \strng{authorfullhash}{24bece773e8873ff8f03d9a3eced56df}
+      \strng{authorfullhashraw}{24bece773e8873ff8f03d9a3eced56df}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computing Sciences in Colleges}
+      \field{number}{3}
+      \field{title}{Selecting and using virtualization solutions: our experiences with VMware and VirtualBox}
+      \field{volume}{25}
+      \field{year}{2010}
+      \field{pages}{11\bibrangedash 17}
+      \range{pages}{7}
+    \endentry
+    \entry{CSI-Linux}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f68af7a1447a59701c5c4330310c0724}{%
+           family={{o.\, V.}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \strng{bibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorbibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authornamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \field{extraname}{1}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(o\adddot~D\adddot)}
+      \field{title}{CSI Linux}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://csilinux.com/
+      \endverb
+      \verb{url}
+      \verb https://csilinux.com/
+      \endverb
+    \endentry
+    \entry{Kernel}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f68af7a1447a59701c5c4330310c0724}{%
+           family={{o.\, V.}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \strng{bibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorbibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authornamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \field{extraname}{2}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(o\adddot~D\adddot)}
+      \field{title}{Kernel-Definition}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://it-service.network/it-lexikon/kernel/
+      \endverb
+      \verb{url}
+      \verb https://it-service.network/it-lexikon/kernel/
+      \endverb
+    \endentry
+    \entry{LZfDOrganigram}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f68af7a1447a59701c5c4330310c0724}{%
+           family={{o.\, V.}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \strng{bibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorbibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authornamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \field{extraname}{3}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(o\adddot~D\adddot)}
+      \field{title}{Oberfinanzdirektion Organigram}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ofd-karlsruhe.fv-bwl.de/,Lde/Startseite/Die+Oberfinanzdirektion/Datenverarbeitung+_LZfD_
+      \endverb
+      \verb{url}
+      \verb https://ofd-karlsruhe.fv-bwl.de/,Lde/Startseite/Die+Oberfinanzdirektion/Datenverarbeitung+_LZfD_
+      \endverb
+    \endentry
+    \entry{OFDHomepage}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f68af7a1447a59701c5c4330310c0724}{%
+           family={{o.\, V.}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \strng{bibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorbibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authornamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \field{extraname}{4}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(o\adddot~D\adddot)}
+      \field{title}{Oberfinanzdirektion: Daten und Fakten}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ofd-karlsruhe.fv-bwl.de/,Lde/Startseite/Die+Oberfinanzdirektion/Daten+und+Fakten
+      \endverb
+      \verb{url}
+      \verb https://ofd-karlsruhe.fv-bwl.de/,Lde/Startseite/Die+Oberfinanzdirektion/Daten+und+Fakten
+      \endverb
+    \endentry
+    \entry{Bash-Shell}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f68af7a1447a59701c5c4330310c0724}{%
+           family={{o.\, V.}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \strng{bibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorbibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authornamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \field{extraname}{5}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(o\adddot~D\adddot)}
+      \field{title}{Stapelverarbeitung: Die Magie von Bash und Shell-Skripten}
+      \field{urlday}{26}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://phlow.de/magazin/terminal/bash-scripte-schreiben/
+      \endverb
+      \verb{url}
+      \verb https://phlow.de/magazin/terminal/bash-scripte-schreiben/
+      \endverb
+    \endentry
+    \entry{UNIX}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f68af7a1447a59701c5c4330310c0724}{%
+           family={{o.\, V.}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{fullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \strng{bibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorbibnamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authornamehash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhash}{f68af7a1447a59701c5c4330310c0724}
+      \strng{authorfullhashraw}{f68af7a1447a59701c5c4330310c0724}
+      \field{extraname}{6}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(o\adddot~D\adddot)}
+      \field{title}{Unix}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Unix
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Unix
+      \endverb
+    \endentry
+    \entry{GoldmineOfOSINT}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4f4116477f7d351f77eed1190a360885}{%
+           family={Pastor-Galindo},
+           familyi={P\bibinithyphendelim G\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd67a1f7565ade4424612e23a08d2860}{%
+           family={Nespoli},
+           familyi={N\bibinitperiod},
+           given={Pantaleone},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4d54bea24c05ab9fea6359deed4a8d4d}{%
+           family={Gómez\bibnamedelima Mármol},
+           familyi={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Félix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caf40fc74d90cb9f24e4d06c01de2d87}{%
+           family={Martínez\bibnamedelima Pérez},
+           familyi={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Gregorio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d5a892356116f05c6ebf3ae80b7ac390}
+      \strng{fullhash}{6dcaf6cb41686f12c9d8832d406d68b6}
+      \strng{fullhashraw}{6dcaf6cb41686f12c9d8832d406d68b6}
+      \strng{bibnamehash}{d5a892356116f05c6ebf3ae80b7ac390}
+      \strng{authorbibnamehash}{d5a892356116f05c6ebf3ae80b7ac390}
+      \strng{authornamehash}{d5a892356116f05c6ebf3ae80b7ac390}
+      \strng{authorfullhash}{6dcaf6cb41686f12c9d8832d406d68b6}
+      \strng{authorfullhashraw}{6dcaf6cb41686f12c9d8832d406d68b6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{The Not Yet Exploited Goldmine of OSINT: Opportunities, Open Challenges and Future Trends}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{10282\bibrangedash 10304}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.2965257
+      \endverb
+      \keyw{Computer crime;Social networking (online);Data mining;Tools;Internet;OSINT;cyberintelligence;cybersecurity;cyberdefence;challenges;national security;computer crime;computational intelligence;knowledge acquisition;social network services;software tools;data privacy;Internet}
+    \endentry
+    \entry{virtualisierung-Portnoy}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6b7a8dcd9a7795f2eacfbd6031b6d2b2}{%
+           family={Portnoy},
+           familyi={P\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \strng{fullhash}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \strng{fullhashraw}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \strng{bibnamehash}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \strng{authorbibnamehash}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \strng{authornamehash}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \strng{authorfullhash}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \strng{authorfullhashraw}{6b7a8dcd9a7795f2eacfbd6031b6d2b2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Virtualisierung für Einsteiger}
+      \field{year}{2012}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

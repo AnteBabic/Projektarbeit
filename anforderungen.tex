@@ -1,0 +1,168 @@
+\chapter{Anforderungen} \label{chap:Anforderungen}
+Dieses Kapitel behandelt die Ergebnisse der Anforderungserhebung, 
+bestimmt die Anforderungen an den Testfallgenerator und stellt geeignete Lösungsansätze zur Umsetzung dieser Anforderungen vor.
+
+\section{Anforderungserhebung}
+%Bevor mit der Umsetzung des Testfallgenerators begonnen werden konnte, mussten vorab die Anforderungen geklärt werden.
+%%Dazu wurde mit den beteiligten Kollegen besprochen, was das Tool können soll, welche Eingabeformate unterstützt werden müssen und wie die Testfälle aufgebaut sein sollen. 
+%Es wurde intern festgelegt, welche Funktionen sowie Eingabe- und Ausgabeformate unterstützt werden müssen und welche Struktur die Testfalldaten haben sollen, da diese für die interne Weiterverarbeitung genutzt werden.   
+%Wichtig war auch zu verstehen, wie die Testfälle später genutzt werden und welche Regeln oder Abläufe dabei beachtet werden müssen. 
+%Diese Ergebnisse bildeten die Grundlage für die technische Umsetzung.
+
+Bevor mit der Entwicklung des Testfallgenerators begonnen wurde, mussten zunächst die Anforderungen festgelegt werden. 
+Dabei wurde festgelegt, welche Funktionen der Generator später unterstützen soll. 
+Außerdem wurden die erforderlichen Eingabe und Ausgabeformate bestimmt, um eine reibungslose Nutzung und Weiterverarbeitung der Testfalldaten zu gewährleisten.
+Ein wichtiger Punkt war auch die Struktur der Testfalldaten. 
+Diese musste so gestaltet sein, dass sie von anderen Systemen oder Anwendern problemlos weiterverarbeitet werden kann. 
+Zusätzlich wurde geprüft, wie die Testfälle später verwendet werden, um sicherzustellen, dass alle notwendigen Regeln berücksichtigt werden.
+
+Diese Erkenntnisse bildeten die Grundlage für die technische Umsetzung des Testfallgenerators. 
+Durch die klare Definition der Anforderungen konnte die Entwicklung zielgerichtet und effizient erfolgen.
+
+\section{Anforderungen an den Testfallgenerator}
+Der Testfallgenerator soll automatisch Testfälle aus strukturierten Eingaben wie \ac{xml} oder Excel erzeugen können. Dabei muss er die Daten richtig einlesen, die Testfälle im gewünschten Format ausgeben und bestimmte Regeln bei der Erzeugung beachten.
+Das Tool soll außerdem so gebaut sein, dass es leicht angepasst oder erweitert kann, zum Beispiel für andere Datenformate oder neue Anforderungen.
+Die Eingabe- und Ausgabedatenstruktur soll klar aufgebaut und nachvollziehbar sein.
+
+Die folgenden Anforderungen sind in funktionale und nicht funktionale Anforderungen aufgelistet.
+
+\bigskip \textbf{Funktionale Anforderungen:}
+\begin{itemize}
+    \item Korrekter Datenimport der Eingabedaten
+    \begin{quote}
+        Der Testfallgenerator muss in der Lage sein, Testfalldaten aus Excel beziehungsweise \ac{xml} Dateien fehlerfrei zu importieren, wobei alle relevanten Ergebnisse korrekt übernommen werden
+    \end{quote}
+    \item Automatische Erzeugung von Testfällen basierend auf den eingelesenen Daten
+    \begin{quote}
+        Das Programm soll automatisch strukturierte Testfälle generieren, sobald die Eingabedaten aus der Excel beziehungsweise \ac{xml} Datei erfolgreich importiert wurden
+    \end{quote}
+    \item Unterstützung mehrerer Ausgabeformate
+    \begin{quote}
+        Der Testfallgenerator soll die erzeugten Testfälle in verschiedenen Formaten exportieren können
+    \end{quote}
+\end{itemize}
+
+
+\bigskip \textbf{Nicht Funktionale Anforderungen:}
+\begin{itemize}
+    \item Effiziente Verarbeitung großer Daten
+    \begin{quote}
+        Der Testfallgenerator soll auch bei sehr umfangreichen Eingabedateien, eine zügige Verarbeitung gewährleisten, um die Benutzerfreundlichkeit nicht zu beeinträchtigen
+    \end{quote}
+    \item Zuverlässigkeit der Korrektheit der Testfälle
+    \begin{quote}
+        Der Testfallgenerator soll sicherstellen, dass alle erzeugten Testfälle inhaltlich korrekt und vollständig sind, sodass sie ohne manuelle Nachkorrektur in Testsystemen verwendet werden können
+    \end{quote}
+    \item Wartbarkeit des Generators
+    \begin{quote}
+        Der Quellcode des Generators soll so strukturiert, dokumentiert und modular aufgebaut sein, dass zukünftige Änderungen oder Erweiterungen mit minimalem Aufwand möglich sind
+    \end{quote}
+    \item Einfache Bedienung für die Anwender
+    \begin{quote}
+        Der Testfallgenerator soll über klar dokumentierte und verständliche Schnittstellen oder Befehle verfügen, sodass Anwender ohne großen Aufwand Testfälle importieren und exportieren können
+    \end{quote}
+    \item Möglichkeit zur Erweiterbarkeit neuer Datenformate
+    \begin{quote}
+        Der Testfallgenerator soll so gestaltet sein, dass künftig problemlos neue Eingabe und Ausgabeformate hinzugefügt werden können, ohne den bestehenden Code stark ändern zu müssen
+    \end{quote}
+\end{itemize}
+\bigbreak
+In einem Projekt ist es wichtig, die verschiedenen Anforderungen nach ihrer Bedeutung zu ordnen, dafür existieren verschiedene Methoden zur Einteilung, diese werden im Folgenden näher erläutert.
+
+Das Kano Modell unterscheidet Anforderungen in Basisfaktoren, Leistungsfaktoren und Begeisterungsfaktoren, um zu zeigen, wie ihre Erfüllung die Zufriedenheit von Nutzern beeinflusst. 
+Es macht ersichtlich, welche Merkmale als selbstverständlich erwartet werden, welche direkt die Zufriedenheit steigern und welche einen überraschend positiven Effekt haben \cite{kano1984quality}.
+
+Die RICE Kategorisierung bildet einen nummerischen Score aus Reach × Impact × Confidence / Effort, sodass Anforderungen anhand von Reichweite, Wirkung, Vertrauenswürdigkeit der Schätzung und Aufwand vergleichbar werden. 
+Die Methode erlaubt ein quantifiziertes Ranking, das hilft, viele Ideen systematisch zu ordnen \cite{perri2018escaping}.
+
+Die WSJF Kategorisierung priorisiert nach dem Verhältnis Cost of Delay zur geschätzten Dauer, sodass Aufgaben mit dem höchsten wirtschaftlichen Nutzen pro Zeiteinheit zuerst bearbeitet werden. 
+Die Methode fokussiert Time to Market und ökonomische Trade offs, indem sie Verzögerungskosten in Relation zur Aufwandsdauer setzt \cite{leffingwell2018safe}.
+
+Die MoSCoW Methode teilt Anforderungen in vier Kategorien ein, Must (Muss), Should (Soll), Could (Kann) und Won’t (wird nicht sein). Muss Anforderungen sind unverzichtbar, ohne sie kann das Projektziel nicht erreicht werden. 
+Soll Anforderungen sind ebenfalls wichtig, tragen aber eher zur Verbesserung oder Optimierung bei. Kann Anforderungen sind "nice to have" Funktionen, die umgesetzt werden, wenn Zeit und Ressourcen verfügbar sind. 
+Won’t Anforderungen werden für das betrachtete Projekt bewusst ausgeschlossen \cite{agilebusinessconsortium2014dsdm}.
+ 
+Zur Kategorisierung der Folgenden Anforderungen wird die MoSCoW Methode verwendet, diese überzeugt durch ihre einfache Struktur und klare Priorisierung, 
+wodurch sie sehr verständlich ist und eine einfache, klare Grundlage für die Entscheidungen schafft.
+
+%. Dafür unterscheidet man zwischen Muss, Soll und Kann Anforderungen. 
+%Muss Anforderungen sind unverzichtbar, ohne sie kann das Projektziel nicht erreicht werden. Soll Anforderungen sind ebenfalls wichtig, tragen aber eher zur verbesserung oder Optimierung bei. Kann Anforderungen sind "nice to have" Funktionen,
+%die umgesetzt werden, wenn Zeit und Ressourcen verfügbar sind. Zur Priosierung dieser Anforderungen wird häufig die MoSCoW Methode verwendet. Der Begriff steht für Must have, Should have, Could have und Won't have. 
+%Diese Methode hilft den Überblick zu behalten und sicherzustellen, dass zuerst die wirklich wichtigen Punkte umgesetzt werden, bevor man sich um zusätzliche Wünsche kümmert.
+
+Die Anforderungen sind in den Kategorien Muss-, Soll- und Kann Anforderungen zugeordnet. Eine Übersicht bietet die folgende Tabelle.
+
+\noindent
+\begin{longtable}{|p{3cm}|p{\dimexpr\textwidth-3cm-2\tabcolsep-2\arrayrulewidth\relax}|}
+\hline
+\textbf{Kategorie} & \textbf{Beschreibung der Anforderung} \\
+\hline
+\endhead
+\hline
+\endfoot
+Muss & Korrekter Datenimport der eingegebenen Daten \\
+\hline
+Muss & Zuverlässigkeit der Korrektheit der Testfälle \\
+\hline
+Soll & Möglichkeit zur Erweiterbarkeit neuer Datenformate \\
+\hline
+Soll & Automatische Erzeugung von Testfällen basierend auf den eingelesenen Daten \\
+\hline
+Soll & Effiziente Verarbeitung großer Datenmengen \\
+\hline
+Soll & Wartbarkeit des Generators \\
+\hline
+Kann & Unterstützung mehrerer Ausgabeformate \\
+\hline
+Kann & Einfache Bedienung für die Anwender \\
+\hline
+\end{longtable}
+
+
+%Zu den \textbf{Muss Anforderungen} zählt der korrekte Import der eingegebenen Daten. 
+%Diese Funktion ist wesentlich, da ohne einen fehlerfreien und vollständigen Datenimport keine Testfälle erstellt werden können. 
+%Ebenso unverzichtbar ist die Gewährleistung der Korrektheit der Testfälle, da nur fehlerfreie Ergebnisse eine zuverlässige Überprüfung der Logik in der Steuererklärungsoftware ermöglichen.
+
+Zu den \textbf{Muss Anforderungen} zählt der korrekte Import der eingegebenen Daten. Diese Funktion ist wesentlich, da ohne einen fehlerfreien und vollständigen Datenimport keine Testfälle erstellt werden können. 
+Ebenso unverzichtbar ist die Gewährleistung der Korrektheit der Testfälle, da nur fehlerfreie Ergebnisse eine zuverlässige Überprüfung der Logik in der Steuererklärung Software ermöglichen. 
+MoSCoW klassifiziert diese Anforderungen als Must da ohne diese der Testfallgenerator seine Funktion nicht erfüllen kann.
+
+%Zu den \textbf{Soll Anforderungen} gehört die Möglichkeit, neue Datenformate zu unterstützen, um die Software flexibel an zukünftige Anforderungen anpassen zu können, da diese Funktion für zukünftige Erweiterungen wichtig ist und für den Anfang nicht relevant ist.  
+%Auch die automatische Erzeugung von Testfällen auf Basis der eingelesenen Daten ist ein wesentlicher Bestandteil, der den Prozess deutlich beschleunigt, im Bedarfsfall jedoch auch manuell umgesetzt werden könnte. 
+%Die effiziente Verarbeitung großer Datenmengen trägt zu einer hohen Leistungsfähigkeit bei, ist jedoch nicht zwingend für die Grundfunktion erforderlich. 
+%Die Wartbarkeit des Generators ist ebenfalls von Bedeutung, um spätere Anpassungen und Fehlerbehebungen mit geringem Aufwand vornehmen zu können.
+%Die genannten Anforderungen fallen in das Sollkriterium, da der Testfallgenerator auch ohne diese Funktion einsatzfähig ist und nicht zwingend darauf angewiesen ist.
+
+Zu den \textbf{Soll Anforderungen} gehört die Möglichkeit, neue Datenformate zu unterstützen, um die Software flexibel an zukünftige Anforderungen anpassen zu können, da diese Funktion für zukünftige Erweiterungen wichtig ist und für den Anfang nicht relevant ist. 
+Auch die automatische Erzeugung von Testfällen auf Basis der eingelesenen Daten ist ein wesentlicher Bestandteil, der den Prozess deutlich beschleunigt, im Bedarfsfall jedoch auch manuell umgesetzt werden könnte. 
+Die effiziente Verarbeitung großer Datenmengen trägt zu einer hohen Leistungsfähigkeit bei, ist jedoch nicht zwingend für die Grundfunktion erforderlich. 
+Die Wartbarkeit des Generators ist ebenfalls von Bedeutung, um spätere Anpassungen und Fehlerbehebungen mit geringem Aufwand vornehmen zu können. 
+Die MoSCoW Methode ordnet diese Anforderungen als Should ein, da sie die Qualität und Erweiterbarkeit des Testfallgenerators deutlich erhöhen aber nicht zwingend für die Grundfunktionalität erforderlich sind.
+
+%Zu den \textbf{Kann Anforderungen} zählen die Unterstützung mehrerer Ausgabeformate, die den Anwendern zusätzliche Möglichkeiten bei der Weiterverarbeitung der Testergebnisse bietet, 
+%sowie eine besonders einfache Bedienung, die den Einstieg erleichtert und die Nutzererfahrung verbessert. 
+%Diese Funktionen sind nicht zwingend erforderlich, damit die Software ihre funktionalität erfüllt, sondern um den Komfort und die Flexibilität der Nutzer zu erhöhen. 
+%Daher sind diese als Kann Anforderungen kategorisiert, da der Testfallgenerator ohne diese Erweiterungen einsatzfähig bleibt.
+
+Zu den \textbf{Kann Anforderungen} zählen die Unterstützung mehrerer Ausgabeformate, die den Anwendern zusätzliche Möglichkeiten bei der Weiterverarbeitung der Testergebnisse bietet, sowie eine besonders einfache Bedienung, die den Einstieg erleichtert und die Nutzererfahrung verbessert. 
+MoSCoW klassifiziert diese Anforderungen als Could, da sie den Bedienkomfort und die Flexibilität des Testfallgenerators erhöhen, für die erste funktionsfähige Version des Testfallgenerators jedoch nicht zwingend erforderlich sind.
+
+Damit ist die Priorisierung abgeschlossen und die Anforderungen sind klar nach Wichtigkeit geordnet. Die Einordnung bildet die Grundlage für die Planung und zeigt, welche Funktionen zuerst umgesetzt werden müssen und welche bei Bedarf verschoben werden könne.
+Prioritäten sollten regelmäßig übergeprüft und bei neuen Erkenntnissen oder geänderten Rahmenbedingungen angepasst werden.
+
+%\section{Lösungsansatz zur Umsetzung der Anforderungen}
+%
+%Um die gestellten Anforderungen effizient umzusetzen, wurde der Testfallgenerator in der Programmiersprache Java entwickelt. 
+%Das grundlegende Konzept besteht darin, unterschiedliche Eingabedatenformate, wie zum Beispiel \ac{xml} oder Excel Dateien, einzulesen und diese anschließend intern weiterzuverarbeiten. 
+%Auf Basis dieser verarbeiteten Daten werden automatisch Testfälle generiert.
+%
+%Zuerst werden die eingelesenen Daten in Java Objekte umgewandelt, damit sie im Programm übersichtlich und gut organisiert verarbeitet werden können. 
+%Danach werden die Testfälle nach festgelegten Regeln erstellt, sodass die Ergebnisse zuverlässig und nachvollziehbar sind. 
+%Zum Schluss werden die fertigen Testfälle in einem passenden Format ausgegeben, das für die weiteren Schritte oder die Testumgebung verwendet werden kann.
+%
+%Besonders wichtig bei der Entwicklung des Testfallgenerators war der Aufbau des Codes. 
+%Dieser wurde bewusst so gestaltet, dass er in Zukunft leicht erweitert und an neue Anforderungen angepasst werden kann. 
+%Das ermöglicht zum Beispiel die einfache Integration neuer Datenformate oder die Anpassung an Änderungen in der Datenstruktur, ohne dass bestehende Funktionen beeinträchtigt werden.
+%
+%Ein zentrales Ziel der Lösung war es, eine einfache und zuverlässige Funktion sicherzustellen, die gleichzeitig flexibel genug ist, um auch künftigen Anforderungen gerecht zu werden. 
+%So kann der Testfallgenerator langfristig und effizient in verschiedenen Anwendungsszenarien eingesetzt werden.

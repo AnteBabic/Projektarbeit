@@ -1,0 +1,182 @@
+\chapter{Grundlagen} \label{chap:Grundlagen}
+In diesem Kapitel werden die notwendigen technischen Vorkenntnisse vermittelt, um ein besseres Verständis späterer Schritte zu ermöglichen.
+
+\section{Java}
+Java ist eine objektorientierte Programmiersprache, die auf der sogenannten Java Virtual Machine (JVM) ausgeführt wird \cite{rentrop2017java}.
+Dies ermöglicht es, Java-Programme plattformunabhängig zu nutzen, das heißt, sie laufen auf verschiedenen Betriebssystemen wie Windows, Linux oder macOS ohne Änderungen am Programmcode \cite{innowise2024java}.
+Diese Plattformunabhängigkeit ist einer der Hauptvorteile von Java \cite{rentrop2017java}.
+
+Die Programmiersprache Java verfügt über eine umfangreiche Standardbibliothek, die viele wichtige Funktionen bereitstellt, beispielsweise für die Datenverarbeitung, 
+die Netzwerkkommunikation oder die Benutzeroberflächenentwicklung \cite{ullenboom2015java8}. Java ist so aufgebaut, dass Programme in Klassen und Objekten organisiert werden.
+Dieses Prinzip der Objektorientierung erleichtert die Entwicklung von gut strukturierten, wartbaren und erweiterbaren Anwendungen.
+Durch Konzepte wie Vererbung und Schnittstellen können Programmteile wiederverwendet und flexibel gestaltet werden \cite{innowise2024java}.
+Java bietet viele Möglichkeiten zur Verarbeitung verschiedener Datenformate wie XML und Excel \cite{innowise2024java}.
+%Für XML Daten wird häufig die Technologie \ac{jaxb} verwendet.
+%Sie ermöglicht es, XML Dateien leicht in Java Objekte umzuwandeln und umgekehrt. Dadurch wird die Arbeit mit strukturierten Daten deutlich vereinfacht \cite{horn2025jaxb}.
+%Für Excel Dateien eignet sich die Bibliothek Apache POI. 
+%Sie bietet Funktionen zum Lesen und Schreiben von Tabellen und unterstützt sowohl ältere (.xls) als auch neuere (.xlsx) Formate.
+%Mit diesen Werkzeugen lassen sich tabellarische und strukturierte Daten problemlos in Java-Anwendungen integrieren \cite{codeurjava2025poi}.
+Dank der Plattformunabhängigkeit, der klaren Struktur und der großen Auswahl an Bibliotheken eignet sich Java besonders gut für die Entwicklung stabiler und flexibler Programme \cite{rentrop2017java} \cite{ullenboom2015java8}.
+Die aktive Entwickler-Community sorgt zudem dafür, dass Java regelmäßig weiterentwickelt und an neue Anforderungen angepasst wird \cite{innowise2024java}.
+
+\section{XML}
+%\ac{xml} ist eine textbasierte Sprache zur strukturierten Speicherung und zum Austausch von Daten zwischen verschiedenen Systemen \cite{ausbildung2025xml}.
+%%Sie ist unabhängig von Betriebssystemen und Programmiersprachen, was die Kommunikation zwischen unterschiedlichen Anwendungen erleichtert.
+%\ac{xml} Daten werden in Elementen dargestellt, die durch Tags gekennzeichnet sind zum Beispiel <name>...</name>. 
+%%Jedes Element besteht aus einem öffnenden und einem schließenden Tag zum Beispiel <name>...</name> und kann Text oder weitere Elemente enthalten \cite{wende2025xml}.
+%Durch diese Verschachtelung entsteht eine klare hierarchische Struktur \cite{microsoft2025xml}.
+%
+%Ein \ac{xml} Dokument beginnt mit einer Deklaration, die Informationen zur \ac{xml} Version und Zeichencodierung enthält \cite{microsoft2025xml}.
+%\ac{xml} Daten können sowohl in Elementen als auch in Attributen gespeichert werden. 
+%Elemente eignen sich gut für umfangreiche oder hierarchisch strukturierte Informationen, da sie selbst wieder weitere Unterelemente enthalten können. 
+%Attribute hingegen speichern einfache, meist metadaten ähnliche Informationen in Form von Schlüssel-Wert-Paaren direkt im öffnenden Tag, zum Beispiel <person alter="30\textquotedbl{}>Max</person>. 
+%Ein Vorteil von Attributen ist, dass sie den Aufbau kompakter machen, jedoch können sie keine komplexen Datenstrukturen abbilden. 
+%%Daher sollte man Attribute eher für Eigenschaften oder Metainformationen nutzen und die eigentlichen Daten in Elementen speichern \cite{jaxb}.
+%%Darauf folgt ein zentrales Wurzelelement, das alle weiteren Daten umschließt.
+%%Zusätzlich zu Elementen können Attribute verwendet werden, um weitere Informationen direkt in einem Element zu speichern \cite{wende2025xml}.
+%Ein wichtiger Vorteil von \ac{xml} ist seine Selbstbeschreibbarkeit. Die Tags geben Auskunft darüber, welche Daten enthalten sind, sodass Menschen und Maschinen sie gut verstehen können \cite{ausbildung2025xml}.
+%
+%%\ac{xml} wird von nahezu allen Programmiersprachen und vielen Tools unterstützt, wodurch es sehr flexibel ist und einen großen Einsatzbereich ermöglicht.
+%%Aufgrund seiner Flexibilität und der Möglichkeit, komplexe Daten genau zu strukturieren und zu prüfen, wird \ac{xml} in vielen Bereichen eingesetzt wie zum Beispiel bei Webservices, Konfigurationsdateien oder im Dokumentenaustausch \cite{wende2025xml}.
+%
+%\ac{xml} wird von nahezu allen Programmiersprachen und vielen Anwendungen unterstützt, dadurch wird eine hohe Flexibilität gewährleistet und den Einsatz in Bereichen wie Webservices, Konfigurationsdateien oder dem Dokumentenaustausch ermöglicht.
+%
+%\ac{xml} wird überwiegend als Format für die Weiterverarbeitung und Speicherung der gesammelten Daten verwendet. 
+%XML zeichnet sich durch eine klare, strukturierte und hierarchische Datenorganisation aus, die es ermöglicht, Daten systematisch zu beschreiben und maschinell auszuwerten. 
+%Darüber hinaus ist XML plattformunabhängig und unterstützt die Validierung durch definierte Schemata, was den sicheren Austausch und die langfristige Archivierung von Daten gewährleistet.
+%XML findet vor allem als „Speicher- und Austauschformat“ Verwendung, da es durch seine strukturierte und standardisierte Form die zuverlässige Verwaltung und Übermittlung von Daten zwischen unterschiedlichen Systemen ermöglicht. 
+%Die unterschiedliche Handhabung dieser Formate basiert demnach auf ihren spezifischen Stärken und Einsatzgebieten \cite{w3cXML}.
+
+\ac{xml} ist eine textbasierte Sprache zur strukturierten Speicherung und zum Austausch von Daten zwischen verschiedenen Systemen \cite{ausbildung2025xml}. 
+\ac{xml} Daten werden in Elementen dargestellt, die durch Tags gekennzeichnet sind, zum Beispiel <name>...</name>. 
+Durch diese Verschachtelung entsteht eine klare hierarchische Struktur \cite{microsoft2025xml}. 
+Ein \ac{xml} Dokument beginnt mit einer Deklaration, die Informationen zur \ac{xml} Version und Zeichencodierung enthält \cite{microsoft2025xml}. 
+\ac{xml} Daten können sowohl in Elementen als auch in Attributen gespeichert werden. Elemente eignen sich gut für umfangreiche oder hierarchisch strukturierte Informationen, da sie selbst weitere Unterelemente enthalten können. 
+Attribute hingegen speichern einfache, meist metadatenähnliche Informationen in Form von Schlüssel Wert Paaren direkt im öffnenden Tag, zum Beispiel <person alter="30">Max</person>. 
+Ein Vorteil von Attributen ist, dass sie den Aufbau kompakter machen, jedoch können sie keine komplexen Datenstrukturen abbilden. Ein wichtiger Vorteil von \ac{xml} ist seine Selbstbeschreibbarkeit. 
+Die Tags geben Auskunft darüber, welche Daten enthalten sind, sodass Menschen und Maschinen sie gut verstehen können \cite{ausbildung2025xml}.
+
+\ac{xml} wird von nahezu allen Programmiersprachen und vielen Anwendungen unterstützt, wodurch eine hohe Flexibilität entsteht. 
+Dies ermöglicht den Einsatz in Bereichen wie Webservices, Konfigurationsdateien oder dem Dokumentenaustausch.
+
+Aufgrund seiner strukturierten und standardisierten Form eignet sich \ac{xml} besonders als Format für die Weiterverarbeitung und Speicherung der gesammelten Daten. 
+Die klare Datenorganisation ermöglicht eine systematische Beschreibung und maschinelle Auswertung. Zusätzlich ist \ac{xml} plattformunabhängig und unterstützt die Validierung durch definierte Schemata, 
+was den sicheren Austausch und die langfristige Archivierung von Daten gewährleistet. Dadurch wird \ac{xml} bevorzugt als „Speicher- und Austauschformat“ eingesetzt, 
+das die zuverlässige Verwaltung und Übermittlung von Daten zwischen unterschiedlichen Systemen ermöglicht \cite{w3cXML}.
+
+
+\section{Excel}
+%Microsoft Excel ist ein Programm aus der Microsoft office Reihe, das vor allem dazu genutzt wird, Daten übersichtlich in Tabellen zu erfassen, zu bearbeiten und auszuwerten.
+%Es gehört zur Gruppe der Tabellenkalkulationsprogramme und wird in vielen Bereichen genutzt, zum Beispiel in der Wirtschaft, der Wissenschaft oder auch im Alltag \cite{vogt2025excel}.
+%Die Basis von Excel ist das Arbeitsblatt, das aus vielen kleinen Kästchen besteht, den sogenannten Zellen. 
+%Diese Zellen sind in Spalten alphabetisch und Zeilen nummerisch geordnet, wodurch jede Zelle eine eindeutige Adresse erhält, wie etwa die Zelle A1.
+%In den Zellen können verschiedene Inhalte eingetragen werden, zum Beispiel Zahlen, Texte oder auch Formeln \cite{vogt2025excel}.
+%%Besonders hilfreich in Excel sind die automatischen Berechnungen, die eingebauten Funktionen und Formatierungen. Dadurch ist es möglich zum Beispiel mehrere Zellen miteinander zu verrechnen, 
+%%die Nutzung von Funktionen wie zum Beispiel Durchschnitt MITTELWERT zu verwenden oder WENN Bedingung um Formatierungen anzupassen, 
+%%sodass bestimmte Werte zum Beispiel farblich markiert werden, wenn sie eine bestimmte Bedingung erfüllen.
+%In Excel sind die automatischen Berechnungen, eingebauten Funktionen und bedingte Formatierungen besonders nützlich. 
+%Mit den automatischen Berechnungen können mehrere Zellen miteinander verrechnet werden, was komplexe Berechnungen vereinfacht. 
+%Darüber hinaus stehen eine Vielzahl von Funktionen zur Verfügung, wie zum Beispiel MITTELWERT, um den Durchschnitt zu berechnen, oder WENN, um Bedingungen zu prüfen und daraufhin bestimmte Werte zu berechnen oder darzustellen. 
+%Zusätzlich bietet Excel die Möglichkeit, bedingte Formatierungen zu verwenden. 
+%Diese Funktion ermöglicht es, Zellen automatisch farblich oder anders hervorzuheben, wenn bestimmte Kriterien erfüllt sind, was die Übersichtlichkeit verbessert und die Analyse von Daten vereinfacht.
+%
+%
+%Ein weiterer wichtiger Aspekt ist die Zellformatierung und das Datenformat. 
+%Excel unterscheidet verschiedene Datentypen wie Zahlen, Texte, Datumsangaben, Uhrzeiten, Prozentwerte oder Währungen \cite{vogt2025excel}.
+%Diese Formate beeinflussen sowohl die Darstellung als auch das Verhalten der Daten, zum Beispiel bei Berechnungen oder beim Sortieren \cite{microsoft2025pivot}.
+%So kann Excel automatisch erkennen, ob es sich bei einer Eingabe um eine Zahl oder ein Datum handelt, und die Zelle entsprechend formatieren.
+%Darüber hinaus bietet Excel viele Werkzeuge zur Analyse und Visualisierung von Daten, wie Filter, Diagramme, Pivot-Tabellen oder Datenschnitte. 
+%Diese Funktionen ermöglichen es, große Datenmengen übersichtlich auszuwerten und anschaulich darzustellen \cite{microsoft2025pivot}.
+%
+%Excel-Dateien werden häufig zur Erfassung und Sammlung von Daten eingesetzt, da sie eine benutzerfreundliche und übersichtliche Oberfläche bieten. 
+%Durch die tabellarische Darstellung können Anwender Daten einfach eingeben, bearbeiten und strukturieren, auch ohne umfangreiche technische Kenntnisse. 
+%Die weite Verbreitung von Excel und die Möglichkeit, Daten direkt zu visualisieren und zu analysieren, machen es zu einem beliebten Werkzeug insbesondere für die initiale Datenerfassung.
+%Excel wird somit häufig als „Eingabewerkzeug“ verwendet, da es eine einfache und flexible Möglichkeit bietet, Daten direkt durch Menschen zu erfassen und zu bearbeiten \cite{davenport2007competing}.
+
+Microsoft Excel ist ein Programm aus der Microsoft Office Reihe, das vor allem dazu genutzt wird, Daten übersichtlich in Tabellen zu erfassen, zu bearbeiten und auszuwerten. 
+Es gehört zur Gruppe der Tabellenkalkulationsprogramme und findet breite Anwendung in Bereichen wie Wirtschaft, Wissenschaft oder auch im Alltag \cite{vogt2025excel}. 
+Die Grundlage von Excel bildet das Arbeitsblatt, das aus vielen kleinen Zellen besteht. 
+Diese sind in Spalten (alphabetisch) und Zeilen (nummerisch) organisiert, sodass jede Zelle eine eindeutige Adresse wie A1 erhält. 
+In den Zellen lassen sich verschiedene Inhalte eintragen, etwa Zahlen, Texte oder Datumsangaben \cite{vogt2025excel}.
+
+Ein zentraler Vorteil von Excel ist die tabellarische Darstellung der Daten, die eine klare Struktur und eine einfache Orientierung ermöglicht. 
+Darüber hinaus bietet Excel verschiedene Werkzeuge zur visuellen Aufbereitung und Analyse von Daten, wie zum Beispiel Filter, Diagramme, Pivot Tabellen oder bedingte Formatierungen. 
+Diese helfen dabei, Muster, Auffälligkeiten oder Abweichungen in größeren Datenmengen schnell zu erkennen und gezielt auszuwerten \cite{microsoft2025pivot}.
+
+Ein weiterer wichtiger Aspekt ist die Möglichkeit zur individuellen Zellformatierung. 
+Excel unterscheidet verschiedene Datentypen wie Zahlen, Texte, Datumsangaben, Uhrzeiten, Prozentwerte oder Währungen \cite{vogt2025excel}. 
+Diese Formate beeinflussen sowohl die Darstellung als auch das Verhalten der Daten, zum Beispiel beim Sortieren oder bei der Berechnung von Summen \cite{microsoft2025pivot}. 
+Excel erkennt viele dieser Typen automatisch, was den Arbeitsaufwand bei der Datenerfassung reduziert.
+
+Excel Dateien werden häufig zur Datenerfassung eingesetzt, da die benutzerfreundliche Oberfläche eine intuitive Eingabe und Strukturierung ermöglicht, auch ohne tiefgehende technische Kenntnisse. 
+Die breite Verfügbarkeit, die einfache Bedienbarkeit sowie die integrierten Auswertungs und Darstellungsmöglichkeiten machen Excel zu einem beliebten Werkzeug für die initiale Datensammlung. 
+Es dient daher oft als „Eingabewerkzeug“, das eine direkte und flexible Interaktion mit den Daten erlaubt \cite{davenport2007competing}.
+
+
+\section{XML Verarbeitung in Java mit JAXB und DOM}
+
+
+Um \ac{xml} Dateien mit Java zu verarbeiten, werden zwei Java Technologien, \ac{jaxb} und \ac{dom} benutzt, diese werden im folgenden näher erläutert.
+
+\subsection{JAXB}
+
+\ac{jaxb} ist eine Java Technologie, mit der sich \ac{xml} Daten direkt in Java Objekte umwandeln lassen und umgekehrt \cite{horn2025jaxb}. 
+Dieser Vorgang wird Marshalling genannt, wenn Java Objekte in \ac{xml} geschrieben werden, und Unmarshalling, wenn \ac{xml} in Java Objekte eingelesen wird. 
+Dadurch können \ac{xml} Daten strukturiert verarbeitet werden, ohne dass Entwickler selbst komplexe Parser schreiben müssen. Das spart Zeit und verringert den Programmieraufwand \cite{jaxb}.
+Für die Umsetzung werden Java Klassen mit speziellen \ac{jaxb} Annotationen versehen, zum Beispiel @XmlElement, @XmlAttribute oder @XmlRootElement. 
+Diese legen fest, wie Felder und Methoden der Klasse mit den \ac{xml} Elementen und Attributen verknüpft sind. 
+Alternativ kann \ac{jaxb} aus einer \ac{xml} Schema Datei (XSD) automatisch passende Java Klassen erzeugen, was besonders bei umfangreichen oder komplexen Datenstrukturen hilfreich ist.
+Ein weiterer Vorteil ist, dass der Code übersichtlich und gut wartbar bleibt, da direkt mit Java Objekten gearbeitet wird \cite{horn2025jaxb}. 
+Änderungen an der \ac{xml} Struktur lassen sich durch Anpassungen an den Klassen oder am Schema schnell umsetzen \cite{jaxb}. 
+\ac{jaxb} unterstützt außerdem Namespaces, komplexe Datentypen und Listen, sodass auch große und verschachtelte \ac{xml} Dokumente verarbeitet werden können.
+Ein Nachteil von \ac{jaxb} ist, dass es das gesamte \ac{xml} Dokument im Speicher hält, was bei sehr großen Dateien zu einem erhöhten Speicherverbrauch führen kann.
+\ac{jaxb} wird vor allem in Anwendungen eingesetzt, die regelmäßig \ac{xml} Daten lesen oder schreiben, zum Beispiel bei Webservices, Konfigurationsdateien, Datenaustausch zwischen Systemen oder standardisierten Dokumentformaten \cite{datacenterJava}. 
+
+\subsection{DOM}
+Das \ac{dom} ist ein standardisiertes Modell, mit dem \ac{xml} oder HTML Dokumente als Baumstruktur dargestellt und bearbeitet werden \cite{ausbildung2025xml}. 
+Über \ac{dom} können einzelne Elemente gezielt gelesen, geändert, gelöscht oder ergänzt werden. 
+Das gesamte Dokument wird dabei in den Arbeitsspeicher geladen und als Hierarchie aus Knoten dargestellt, wobei jedes Element, Attribut oder Textstück einen eigenen Knoten bildet \cite{wende2025xml}. 
+So kann man gezielt auf bestimmte Teile des Dokuments zugreifen und diese bearbeiten.
+Ein Vorteil ist, dass Entwickler das Dokument wie ein Objektmodell behandeln können \cite{microsoft2025xml}. 
+Über Programmierschnittstellen (APIs) lassen sich Knoten suchen, verschieben, kopieren oder neu anlegen. 
+\ac{dom} ist sprachunabhängig und wird in vielen Programmiersprachen wie Java, JavaScript, Python oder C\# unterstützt.
+\ac{dom} wird oft genutzt, wenn komplexe Dokumente verarbeitet werden müssen, zum Beispiel bei der Anpassung von Webseiten im Browser, beim Auslesen bestimmter Daten aus \ac{xml} Dateien oder beim Erstellen neuer Dokumente aus vorhandenen Strukturen \cite{wende2025xml}. 
+Es eignet sich besonders, wenn man den kompletten Überblick über die Struktur braucht oder an mehreren Stellen Änderungen vornehmen will.
+Ein Nachteil ist, dass immer das gesamte Dokument im Speicher gehalten wird. 
+Bei sehr großen Dateien kann das viel Speicher verbrauchen und zu längeren Ladezeiten führen. 
+In solchen Fällen nutzt man oft Alternativen wie SAX (Simple API for XML) oder StAX (Streaming API for XML), die das Dokument Schritt für Schritt verarbeiten und weniger Speicher benötigen \cite{ausbildung2025xml}.
+Trotzdem bleibt \ac{dom} wegen seiner klaren Struktur, der einfachen Navigation und der breiten Unterstützung ein wichtiges Werkzeug für die Arbeit mit \ac{xml} und HTML Dokumenten \cite{wende2025xml}.
+
+
+\section{Excel Verarbeitung in Java mit Apache POI}
+
+Zur Verarbeitung von Excel-Dateien wurde die Java-Bibliothek Apache POI verwendet. 
+Diese frei verfügbare Bibliothek ermöglicht es, Microsoft-Office-Dokumente, vor allem Excel Dateien im Format .xls und .xlsx direkt im Programm zu öffnen, auszulesen, zu bearbeiten und auch neue Dateien zu erstellen \cite{apachePOI}.
+
+Mit Apache POI kann gezielt auf Inhalte von Tabellen zugegriffen, einzelne Zellen oder ganze Bereiche verändert und neue Arbeitsblätter angelegt werden
+Ergebnisse, die während der Ausführung entstehen, lassen sich problemlos wieder in eine Excel Datei schreiben, etwa zur Dokumentation oder für spätere Auswertungen \cite{apachePOI}\cite{baeldung2025apachepoi}.
+Die Bibliothek besteht aus verschiedenen Teilen. HSSF (Horrible Spreadsheet Format) ist zuständig für ältere .xls Dateien, während XSSF (XML Spreadsheet Format) mit dem neueren .xlsx Format arbeitet. 
+Darüber hinaus bietet Apache POI auch Funktionen, mit denen man Inhalte formatieren, Formeln einfügen oder sogar Diagramme erstellen kann, ganz ohne Excel manuell zu öffnen \cite{baeldung2025apachepoi}.
+Durch den Einsatz von Apache POI lässt sich die Arbeit mit Excel-Dateien vollständig automatisieren. Das spart Zeit, reduziert Fehler und macht Testabläufe einfacher und zuverlässiger. 
+Außerdem können Excel-Daten direkt in Java-Anwendungen eingebunden werden, was die Entwicklung deutlich erleichtert \cite{apachePOI,baeldung2025apachepoi}.
+
+
+%\section{JUnit Tests}
+%JUnit ist ein Framework, das speziell für Java entwickelt wurde und es ermöglicht, automatische Tests für einzelne Teile des Codes zu schreiben \cite{junit2025overview}.
+%JUnit Tests sind ein wichtiger Bestandteil in der Softwareentwicklung, wodurch die Qualität und Korrektheit der Programme sichergestellt wird. 
+%So können Entwickler prüfen, ob einzelne Methoden oder Komponenten wie gewollt arbeiten \cite{baeldung2024junit}.
+%Mit JUnit werden spezielle Testfälle definiert, bei denen bestimmte Eingabewerte an eine Methode übergeben werden. 
+%Anschließend wird überprüft, ob das Ergebnis den Erwartungen entspricht oder ob auftretende Fehler korrekt behandelt werden \cite{gamma2005junit}. .
+%Dabei kennzeichnen einfache Annotationen wie @Test Methoden als Testfälle und ermöglichen es dem Test Framework, diese automatisch zu erkennen und auszuführen, 
+%so wird der Code übersichtlich strukturiert und der Testablauf organisiert \cite{junit2025overview}.
+%Ein großer Vorteil von JUnit Tests ist, dass Fehler früh in der Entwicklungsphase erkannt und behoben werden können. Tests können immer wieder automatisch ausgeführt werden, zum Beispiel bei jeder Änderung im Programm. 
+%So wird sichergestellt, dass neue Anpassungen keine Probleme verursachen. Das erhöht die Sicherheit und Verlässlichkeit des Codes \cite{junit2025overview}\cite{baeldung2024junit}.
+
+%\section{Aufbau und Struktur von Testfalldaten}
+%Die Testfalldaten sind in einem klaren Schema aufgebaut, um eine konsistente und nachvollziehbare Verarbeitung zu ermöglichen. 
+%Jeder Testfall enthält eine laufende Nummer zur eindeutigen Identifizierung sowie Angaben zu den Eingabewerten, 
+%den erwarteten Ergebnissen und eventuell eine kurze Beschreibung. Diese Struktur erleichtert sowohl die manuelle Nachvollziehbarkeit als auch die automatische Weiterverarbeitung im Testfallgenerator.
+%Durch die einheitliche Gliederung können Fehler leichter erkannt werden und die Vergleichbarkeit der Testfälle bleibt gewährleistet.
+
+
+

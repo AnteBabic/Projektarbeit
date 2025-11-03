@@ -1,0 +1,281 @@
+\lstdefinelanguage{XML}{
+  morestring=[b]",
+  morecomment=[s]{<!--}{-->},
+  stringstyle=\color{red},
+  identifierstyle=\color{blue},
+  morekeywords={xmlns,version,type}
+}
+
+\lstset{
+  language=XML,
+  basicstyle=\ttfamily\tiny,    % kleine Schrift
+  numbers=left,
+  numberstyle=\tiny,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  breaklines=true,
+  frame=single,
+  captionpos=b
+}
+
+
+
+\chapter{Implementierung und Laufzeit} \label{chap:Implementierung und Laufzeit}
+%Dieser Abschnitt beschreibt das Einlesen und Verarbeiten von \ac{xml} und Excel Daten, definiert die Logik zur Generierung von Testfällen und begründet die Wahl der genutzten Werkzeuge. 
+%Dieser Abschnitt beschreibt das Einlesen und Verarbeiten von XML und Excel Dateien, die Logik zur Testfallgenerierung, die Wahl der Werkzeuge, die Funktionstests mit JUnit sowie beispielhafte Testfallausgaben.
+Dieser Abschnitt beschreibt das Einlesen und Verarbeiten von XML und Excel Dateien, die Logik zur Testfallgenerierung, die Wahl der Werkzeuge sowie beispielhafte Testfallausgaben und beschreibt die Laufzeit.
+
+\section{Lösungsansatz zur Umsetzung der Anforderungen}
+
+Um die gestellten Anforderungen effizient umzusetzen, wurde der Testfallgenerator in der Programmiersprache Java entwickelt. 
+Das grundlegende Konzept besteht darin, unterschiedliche Eingabedatenformate, wie zum Beispiel \ac{xml} oder Excel Dateien, einzulesen und diese anschließend intern weiterzuverarbeiten. 
+Auf Basis dieser verarbeiteten Daten werden automatisch Testfälle generiert.
+
+Zuerst werden die eingelesenen Daten in Java Objekte umgewandelt, damit sie im Programm übersichtlich und gut organisiert verarbeitet werden können. 
+Danach werden die Testfälle nach festgelegten Regeln erstellt, sodass die Ergebnisse zuverlässig und nachvollziehbar sind. 
+Zum Schluss werden die fertigen Testfälle in einem passenden Format ausgegeben, das für die weiteren Schritte oder die Testumgebung verwendet werden kann.
+
+%Besonders wichtig bei der Entwicklung des Testfallgenerators war der Aufbau des Codes. 
+%Dieser wurde bewusst so gestaltet, dass er in Zukunft leicht erweitert und an neue Anforderungen angepasst werden kann. 
+%Das ermöglicht zum Beispiel die einfache Integration neuer Datenformate oder die Anpassung an Änderungen in der Datenstruktur, ohne dass bestehende Funktionen beeinträchtigt werden.
+
+Besonders wichtig bei der Entwicklung des Testfallgenerators war der strukturierte Aufbau des Codes. 
+Dieser wurde bewusst so gestaltet, dass er in Zukunft leicht erweitert und an neue Anforderungen angepasst werden kann.
+Zur Sicherstellung der Erweiterbarkeit basiert die Architektur auf klar definierten Reader und Writer Interfaces, sodass neue Eingabe und Ausgabeformate (z. B. CSV oder Datenbanken) als separate Implementierungen ergänzt werden können, 
+ohne die Kernlogik des Testfallgenerators tiefgreifend zu verändern. 
+Dadurch wird die Integration weiterer Formate oder die Anpassung an geänderte Datenstrukturen möglich, ohne bestehende Funktionen zu beeinträchtigen.
+
+Ein zentrales Ziel der Lösung war es, eine einfache und zuverlässige Funktion sicherzustellen, die gleichzeitig flexibel genug ist, um auch künftigen Anforderungen gerecht zu werden. 
+So kann der Testfallgenerator langfristig und effizient in verschiedenen Anwendungsszenarien eingesetzt werden.
+
+\section{Implementierung}
+In diesen Abschnitt, wird die Implementierung des Testfallgenerators genauer definiert.
+
+\subsection{Einlesen und Verarbeiten von XML/Excel Dateien}
+Der Einlese und Verarbeitungsprozess von \ac{xml} und Excel Dateien bildet die Grundlage für die Arbeit des Testfallgenerators.
+Beide Formate unterscheiden sich in ihrer Struktur, \ac{xml} nutzt eine hierarische Baumdarstellung, während Excel tabellarisch aufgebaut ist.
+Im ersten Schritt werden die Dateien geöffnet und die relevanten Daten wie laufende Nummer, 
+Eingabewerte und optionale Beschreibungen ausgelesen. 
+
+Bei \ac{xml} erfolgt dies über die Navigation durch die Knoten, 
+dazu erstellt man zunächst eine \textit{DocumentBuilderFactory}, die den Parser konfiguriert. 
+Mit einem \textit{DocumentBuilder} wird die \ac{xml} Datei eingelesen und ein \ac{dom} Baum im Speicher aufgebaut, der das gesamte Dokument abbildet.
+Über Methoden wie getDocumentElement(), lässt sich das Root Element auswählen, während getElementByTagName() gezielt bestimmte Elemente anspricht.
+Attribute können mit getAttribute() ausgelesen werden, und die Inhalte der Elemente lassen sich über ihre Unterelemente verarbeiten.
+
+In Excel werden Daten in Tabellenform gespeichert, und bestehen aus mehreren Tabellenblättern die Sheet genannt werden, die jeweils Zeilen und Zellen enthalten. 
+Ein Workbook stellt die ganze Datei dar und kann mit WorkbookFactory.create() geöffnet werden. Um die Daten auszulesen, 
+durchläuft das Programm die einzelnden Tabellenblätter und liest die Daten aus den Zeilen und Zellen nacheinander.
+Dabei ist es wichtig die verschiedenen Zelltypen zu beachten, wie Text STRING, Zahlen NUMERIC oder Wahrheitswerte BOOLEAN. 
+Apache POI bietet Methoden wie zum Beispiel getStringCellValue() um die Daten aus den einzelnden Zellen auszulesen.
+Beim auslesen von \ac{xml} als auch Excel Dateien ist es wichtig auf die Fehlerbehandlung zu achten zum Beispiel durch die Nutzung von try-catch Anweisungen.
+Das Ziel ist es die gleichen Daten zu erfassen unabhängig vom Format.
+
+Im nächsten Schritt werden die Daten in eine gemeinsame interne Struktur gebracht. 
+Die eingelesenen Daten werden zur Laufzeit in Java Objekten gespeichert, die im Arbeitsspeicher (Heap) der Java Virtual Machine abgelegt sind, diese Java Objekte werden \ac{dto} genannt. 
+Diese sind einfache Java Klassen, die Daten strukturiert und ohne Logik kapseln. 
+Erweitert wird der Abschnitt durch eine Beschreibung des internen Datenmodells und der Architektur. 
+Eingelesene Werte werden in Java Klassen vom Typ Feld abgelegt, die Klasse Feld speichert die E Nummer\footnotemark[1] und den dazugehörigen Eingabewert. 
+Mehrere Feldobjekte bilden ein Formular, zum Beispiel GW1\footnotemark[1], GW2\footnotemark[1] oder GW4\footnotemark[1], außerdem bilden mehrere Formulare zusammen eine Erklärung, diese enthält die Daten der Steuererklärung. 
+Zur klaren Trennung der Verantwortlichkeiten existieren ein gemeinsames Reader Interface und ein gemeinsames Writer Interface. 
+Konkrete Implementierungen XMLReader, ExcelReader, XMLWriter und ExcelWriter implementieren diese Schnittstellen und übernehmen jeweils das formatspezifische Parsen. 
+Der Generator setzt die DTOs zu Testfällen zusammen und Writer geben die Testfälle in den gewünschten Formaten aus. 
+%Sie ermöglichen den effizienten und sicheren Datenaustausch zwischen verschiedenen Systemkomponenten oder Schichten. 
+%Beispielsweise können Methoden direkt auf eingelesene Daten aus Excel oder \ac{xml} Dateien zugreifen.
+%Dadurch kann der Testfallgenerator unabhängig vom Ursprungsformat immer mit einer einheitlichen internen Datenstruktur arbeiten. 
+\footnotetext[1]{Die Begriffe \textquotedbl{}E Nummer\textquotedbl{}, \textquotedbl{}GW1\textquotedbl{}, \textquotedbl{}GW2\textquotedbl{} und \textquotedbl{}GW3\textquotedbl{} werden im Kapitel \ref{name: Beispielhafte Testfallausgaben} weiter Erläutert}
+
+\subsection{Ablauf zur Generierung der Testfälle}
+Bei der Generierung von Testfällen im Steuerumfeld geht es darum, aus vorhandenen Daten systematisch Testfälle zu erstellen.
+Die Daten sind in \ac{xml} oder Excel Dateien vorhanden und enthalten zum Beispiel die \ac{steuerid}, Einkommenswerte oder den Familienstand.
+Damit die Testfälle einheitlich aufgebaut sind, bekommen sie eine feste Struktur mit einer laufenden Nummer, den Eingabewerten und dem erwarteten Ergebnis.
+Auf dieser Basis erzeugt der Testfallgenerator die Testfälle. 
+%Neben den normalen Fällen aus den Daten werden auch Sonderfälle gebildet, bei denen zum Beispiel die \ac{steuerid} fehlt, falsche Einkommenswerte auftreten oder nicht nachvollziehbare Eingaben getätigt werden. 
+%So werden nicht nur Standardfälle, sondern auch mögliche Fehler oder Ausnahmen berücksichtigt.
+Am Ende werden alle Testfälle geprüft, durchnummeriert und gespeichert. Dadurch entsteht eine einheitliche Sammlung, die für den Testverlauf genutzt werden kann.
+
+
+\subsection{Wahl und Begründung der Werkzeuge}
+%Für die Verarbeitung der Daten wurde die Programmiersprache Java und passende Bibliotheken wie \ac{jaxb}, ApachePOI und JUnit verwendet.
+%Für die Verarbeitung von \ac{xml} Dateien wurde die \ac{dom} API verwendet, weil sie das \ac{xml} Dokument als Baumstruktur im Arbeitsspeicher abbildet. 
+%Dadurch können die einzelnen Elemente leicht zugänglich und bearbeitbar gemacht werden.
+%Einzelne Elemente und Attribute lassen sich direkt auslesen, da die \ac{dom} API ein Teil von Java ist, dadurch sind keine externen Bibliotheken notwendig.
+%Für Excel Dateien wird Apache POI verwendet. Die Bibliothek unterstützt viele Methoden um Tabellenblätter, Zeilen und Zellen auszulesen. 
+%Apache POI ist in Java Projekten weit verbreitet, wodurch die Integration erleichtert wird.
+%
+%Die Auswahl dieser Werkzeuge ermöglicht eine flexible und wartbare Lösung.
+%Daten aus beiden Formaten können ausgelesen und in java Objekte überführt werden und für die Testfallgenerierung genutzt werden.
+
+Für die Verarbeitung der Daten wurde die Programmiersprache Java gewählt. 
+Java bietet eine plattformunabhängige Umgebung sowie viele verfügbare Bibliotheken, die die Entwicklung erleichtern.
+
+Zur Verarbeitung von \ac{xml} Dateien kam die \ac{dom} API zum Einsatz. 
+Die \ac{dom} API bildet das \ac{xml} Dokument als Baumstruktur im Arbeitsspeicher ab, wodurch einzelne Elemente und Attribute einfach zugänglich und veränderbar sind. 
+Dies ist besonders hilfreich, wenn umfangreiche Manipulationen oder mehrfache Zugriffe auf verschiedene Teile der \ac{xml} Struktur nötig sind. 
+Alternativ wären SAX oder StAX möglich gewesen, die eher eventbasiert arbeiten und weniger Speicher benötigen. Allerdings sind diese APIs eher für sequentielle Lesevorgänge geeignet und weniger intuitiv bei komplexeren Bearbeitungen. 
+Daher wurde die \ac{dom} API bevorzugt, da sie eine einfachere und übersichtlichere Handhabung für diesen Anwendungsfall bietet. 
+Zudem ist die \ac{dom} API direkt in Java integriert, sodass keine externen Abhängigkeiten erforderlich sind.
+Zusätzlich ermöglicht es eine flexible Bearbeitung der \ac{xml} Daten und erleichtert spätere Anpassungen oder Erweiterungen der \ac{xml} Struktur.
+
+Für die Verarbeitung von Excel Dateien wurde die Bibliothek Apache POI verwendet. 
+Apache POI unterstützt umfassend das Lesen und Schreiben von Excel Dateien in verschiedenen Formaten (.xls und .xlsx). 
+Die Bibliothek bietet eine Vielzahl von Methoden, um Tabellenblätter, Zeilen und Zellen zu lesen oder zu bearbeiten. 
+Im Vergleich zu Alternativen wie JExcelAPI oder OpenCSV ist Apache POI aktueller, unterstützt mehr Exce Formate und wird von einer großen Entwicklergemeinschaft gepflegt. 
+Dadurch ist die Integration in Java Projekte einfach und die langfristige Wartbarkeit gesichert.
+
+%Zur Absicherung der Implementierung wurde JUnit als Testframework eingesetzt, da dies in der Java Umgebung weit verbreitet ist und eine einfache und  Möglichkeit bietet, automatisierte Tests zu schreiben und auszuführen.
+%Zur Absicherung der Implementierung wurde JUnit als Testframework eingesetzt. Durch seine Verbreitung in der Java Umgebung bietet es eine einfache und zugleich solide Möglichkeit, automatisierte Tests zu entwickeln und auszuführen.
+
+
+Bibliotheken mit guter Dokumentation und aktiver Entwicklergemeinschaft unterstützen die Wartbarkeit, da Fehler schnell behoben und Anpassungen leicht umgesetzt werden können.
+Durch den modularen Aufbau und der klaren Trennung zwischen Einlesen, Datenmodellierung und Testfallgenerierung ergibt sich eine flexible Lösung, wodurch Erweiterungen ohne großen Aufwand möglich sind.
+Durch die Kombination dieser Technologien entstand eine leistungsfähige, flexible und wartbare Lösung, die Daten aus beiden Formaten zuverlässig auslesen, in Java Objekte überführen und für die Testfallgenerierung verwenden kann.
+
+%\section{Tests}
+%In folgenden Abschnitt werden JUnit Tests und die Überprüfung der Testfalldaten genauer beschrieben.
+%%\chapter{Tests} \label{chap:Tests}
+%%In diesem Kapitel werden die Funktionstests des Generators mithilfe von JUnit vorgestellt. 
+%%Dabei wird insbesondere auf die beispielhaften Testfallausgaben sowie auf die Korrektheit und Vollständigkeit der generierten Testfälle eingegangen.
+%
+%\subsection{Funktionstests des Generators (JUnit Tests)}
+%Um die Funktionsweise des Generators zu überprüfen, wurden JUnit-Tests eingesetzt.
+%Mit diesen Tests kann kontrolliert werden ob die Eingabedaten aus \ac{xml} und Excel Dateien korrekt eingelesen und in die vorgesehene interne Struktur übertragen werden. 
+%Zusätzlich wurde getestet, 
+%ob die erzeugten Testfälle dem festgelegten Schema entsprechen und die Ausgaben vollständig und fehlerfrei sind. 
+%Die Tests berücksichtigen verschiedene Szenarien, wie beispielsweise das Einlesen unterschiedlicher \ac{xml} Elemente mit variierenden Attributen sowie Excel Dateien mit diversen Zellinhalten. 
+%Die Testfälle sind so aufgebaut, dass sie die Vollständigkeit und Korrektheit der eingelesenen Daten sicherstellen. 
+%Hierbei wird geprüft, ob alle Werte korrekt den jeweiligen internen Objekten zugeordnet werden. 
+%Die automatisierte Ausführung der Tests ermöglicht eine schnelle und wiederholbare Überprüfung der Funktionsfähigkeit des Generators, sodass nach Änderungen am Code zeitnah die Zuverlässigkeit des Systems bestätigt werden kann.
+
+\subsection{Beispielhafte Testfallausgaben}\label{name: Beispielhafte Testfallausgaben}
+%Um die Arbeitsweise des Testfallgenerators besser verstehen zu können, wird im Folgenden der Aufbau der Grundsteuererklärung beschrieben.
+%Die Grundsteuererklärung ist in 3 Formulare unterteilt: GW1, GW2, GW4.
+Zur besseren Verständlichkeit der Funktionsweise des Testfallgenerators wird im Folgenden der Aufbau der Grundsteuererklärung erläutert. 
+Diese gliedert sich in drei Formulare: GW1, GW2 und GW4.
+
+%\footnote{Im Folgenden wird die Bezeichnung "Feldkennnummer\textquotedbl{} verwendet, diese sind eindeutige Kennnummern die jedem Feld in einem Formular zugewiesen sind. Sie besitzen eine interne Bedeutung und werden zur internen Verarbeitung der Feldinhalte verwendet.} und einem Eingabewert.
+
+
+Das Formular GW1 dient als Hauptvordruck für die Grundsteuererklärung. 
+Es erfasst grundlegende Informationen zur wirtschaftlichen Einheit, einschließlich Angaben zum Eigentümer, zur Lage des Grundstücks, zum Aktenzeichen sowie zum Grund der Feststellung. 
+Dieses Formular bildet die Basis für die weiteren Angaben und ist für alle Grundstücke erforderlich \cite{elster_bw2025}.
+
+Die Anlage GW2 enthält spezifische Daten zum Grundstück selbst. Hier werden Informationen wie die Gemarkung, die Flurstücksnummer, die Grundstücksfläche, der Bodenrichtwert sowie die Nutzung des Grundstücks abgefragt. 
+Bei Miteigentum sind zudem die jeweiligen Eigentumsanteile anzugeben. Dieses Formular ist notwendig, wenn es sich nicht um ein land- und forstwirtschaftliches Grundstück handelt \cite{elster_bw2025}.
+
+Das Formular GW4 wird verwendet, wenn das Grundstück ganz oder teilweise von der Grundsteuer befreit oder eine Ermäßigung der Steuermesszahl in Anspruch genommen wird. 
+Hier sind die Art der Befreiung oder Vergünstigung sowie die entsprechenden gesetzlichen Grundlagen anzugeben. 
+Dieses Formular ist insbesondere relevant für Grundstücke, die beispielsweise gemeinnützigen Zwecken dienen oder unter Denkmalschutz stehen \cite{elster_bw2025}.
+
+Die eingegebenen Daten in der Grundsteuererklärung werden elektronisch gespeichert. 
+Dabei sind die einzelnen Eingabefelder jeweils mit sogenannten E Nummern versehen. 
+Diese E Nummern dienen der internen Verarbeitung und Zuordnung der Daten durch die Finanzbehörden.
+
+E Nummern sind interne Kennzeichnungen für Eingabefelder in den elektronischen Grundsteuerformularen, die über das ELSTER Portal eingereicht werden. 
+Sie erleichtern den Finanzämtern die strukturierte Verarbeitung und Zuordnung der Daten.
+Jede E Nummer wird mit einem E und einer 7 stelligen Zahl definiert zum Beispiel \textquotedbl{}E1234567\textquotedbl{}.
+Informationsfelder wie Laufendenummer, Beschreibung oder ähnliche besitzen keine Feldkennnummer und bekommen ihren Namen als eindeutige Feldkennung.
+Die Feldkennnummer wird innerhalb der Datei mit \textquotedbl{}nr\textquotedbl{} und der Eingabewert mit \textquotedbl{}wert\textquotedbl{} abgekürzt.
+Für Bürgerinnen und Bürger sind diese Nummern meist unsichtbar und richten sich hauptsächlich an Softwareentwickler, Steuerberater und Finanzbeamte \cite{fm_bw_elnr2025}.
+
+
+eine beispielhafte Datei der erzeugten Testfälle gezeigt. 
+Diese verdeutlicht den Aufbau der Testfälle. 
+Jeder Testfall hat dabei eine eindeutige laufende Nummer, eine kurze Beschreibung und die dazugehörigen Eingabedaten.
+
+Zur Veranschaulichung beispielhafter Testfallausgaben wurde \ac{xml} verwendet, um den Aufbau und die Struktur darzustellen. Hierfür wurde das Formular GW2 als Teil einer Erklärung am folgenden Beispiel gezeigt. \newline
+
+%<GW1>
+%<Feld nr="lfdNr" wert="4"/>
+%<Feld nr="Bezeichnung" wert="Sachbearbeitung"/>
+%<Feld nr="Kurzbeschreibung" wert="Bauerwartungsland"/>
+%<Feld nr="Stichtag" wert="Sat Jan 01 00:00:00 CET 2022"/>
+%<Feld nr="Aktenzeichen" wert="083500120680040016"/>
+%<Feld nr="Finanzamt" wert="Karlsruhe-Stadt"/>
+%<Feld nr="E7401124" wert="Adalbert-Stifter-Straße"/>
+%<Feld nr="E7401125" wert="9"/>
+%<Feld nr="E7401131" wert="Wohnungseigentum 4"/>
+%<Feld nr="E7401121" wert="76199"/>
+%<Feld nr="E7401122" wert="Karlsruhe"/>
+%<Feld nr="E7401141" wert="Gaggenau"/>
+%<Feld nr="E7411702" wert="Bei Rückfragen bitte telefonisch am Vormittag 0761123456"/>
+%<Feld nr="lfdNr2" wert="001"/>
+%<Feld nr="E7404518" wert="14.03.1967"/>
+%<Feld nr="E7404513" wert="Tom"/>
+%<Feld nr="E7404511" wert="Maus"/>
+%<Feld nr="E7404524" wert="Im Efeu"/>
+%<Feld nr="E7404571" wert="2"/>
+%<Feld nr="lfdNr3" wert="002"/>
+%<Feld nr="E74045182" wert="15.04.1967"/>
+%<Feld nr="E74045132" wert="Jerry"/>
+%<Feld nr="E74045112" wert="Maus "/>
+%<Feld nr="E74045242" wert="Im Näpfle"/>
+%<Feld nr="E74045252" wert="5"/>
+%<Feld nr="E74045402" wert="74078"/>
+%<Feld nr="E74045222" wert="Heilbronn"/>
+%</GW1>
+%<GW4/>
+
+\begin{lstlisting}[caption={Beispielhafte Testfallausgaben in XML}] 
+<DatenTeil>
+<Erklaerung LfdNr="4">
+<GW2>
+<Feld nr="E7421322" wert="1"/>
+<Feld nr="E7403010" wert="71"/>
+<Feld nr="E7403011" wert="730"/>
+</GW2>
+</Erklaerung>
+</DatenTeil>
+\end{lstlisting}
+
+
+%\section{Korrektheit und Vollständigkeit der Testfälle}
+%Bei der Arbeit mit Testfällen ist es besonders wichtig, dass alle Angaben korrekt und vollständig sind. 
+%Korrektheit bedeutet, dass die eingetragenen Werte genau den Daten aus der Quelle entsprechen und keine Fehler enthalten.
+%So muss zum Beispiel die laufende Nummer korrekt übernommen werden um korrekt wiedergegeben werden zu können.
+%Die Vollständigkeit bezieht sich darauf, das alle Pflichtfelder eines Testfalls ausgefüllt sind. 
+%Fehlende oder unvollständige Angaben können dazu führen, dass Testfälle nicht korrekt ausgeführt werden oder im Testprozess Fehler auftreten.
+%Ein weiterer wichtiger Punkt ist, dass die Testfälle klar und übersichtlich aufgebaut sind. Nur so können die Testfälle bei Bedarf problemlos kontrolliert werden.
+%Eine einheitliche Struktur  hilft nicht nur den Nutzern sondern auch dem Generator, 
+%da so Daten ohne schwierigkeiten verarbeitet werden können.
+
+\section{Laufzeit}
+In diesem Abschnitt wird die Laufzeit der Konvertierung von einer Excel Datei in eine XML Datei des Testfallgenerators untersucht.
+
+Das System, auf dem die Messungen durchgeführt wurden, besteht aus einem Intel(R) Core(TM) i7 10750H (2,60 GHz), 32 GB RAM, einer NVIDIA Quadro T1000 (4 GB) sowie integrierter Intel UHD Graphics (128 MB). 
+Das Betriebssystem leuft unter Windows 10 Enterprise und verwendet zwei SSDs (Toshiba KXG6AZNV512G 477 GB, Samsung MZVLB1T0HBLR 000L7 954 GB), wobei die Messläufe lokal auf einer SSD ausgeführt wurden.
+
+Für jede Dateigröße (50 KB, 100 KB, 150 KB, 200 KB, 250 KB) wurde die Konvertierung von Excel nach XML fünfmal ausgeführt. 
+Der arithmetische Mittelwert dieser Daten bildet die Messgröße der Gesamtverarbeitungszeit vom Programmstart bis zur fertigen XML Datei pro Größe. 
+Die Läufe wurden lokal auf einer SSD unter ruhenden Systembedingungen durchgeführt.
+
+%\textbf{Ergebnisse der Messwerte}
+%\begin{itemize}
+%  \item 50KB in 937 ms \rightarrow  \approx 50.36 KB/s
+%  \item 100KB in 1167 ms
+%  \item 150KB in 1456 ms
+%  \item 200KB in 1771 ms
+%  \item 250KB in 1985 ms
+%\end{itemize}
+
+\textbf{Ergebnisse der Messwerte}
+\begin{itemize}
+  \item 50\,KB in 937\,ms $\rightarrow\ \approx 50{.}36\ \mathrm{KB/s}$
+  \item 100\,KB in 1167\,ms $\rightarrow\ \approx 85{.}69\ \mathrm{KB/s}$
+  \item 150\,KB in 1456\,ms $\rightarrow\ \approx 103{.}05\ \mathrm{KB/s}$
+  \item 200\,KB in 1771\,ms $\rightarrow\ \approx 112{.}87\ \mathrm{KB/s}$
+  \item 250\,KB in 1985\,ms $\rightarrow\ \approx 125{.}94\ \mathrm{KB/s}$
+\end{itemize}
+
+Die Messgrößen zeigen, dass die Laufzeit mit der Dateigröße linear wächst und sich durch die Formel T(n) = k·n + c beschreiben lässt, wobei n die Dateigröße, c ein fester Startaufwand und k die Zeit pro Daten Einheit bezeichnet. 
+Damit ist die asymptotische Laufzeit linear, also $T(n) \in $ O(n).
+
+Die folgende Grafik zeigt die Messwerte und veranschaulicht das Laufzeitverhalten.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./img/Laufzeit Excel zu XML.png}
+    \caption{Laufzeit Analyse Excel zu XML}
+    \label{fig:bild2}
+\end{figure}

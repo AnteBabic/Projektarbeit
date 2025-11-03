@@ -1,0 +1,23 @@
+
+Docker: 
+
+Docker is an open-source automated deployment system that delivers applications through minimal 
+abstraction containers. A package of dependent applications and required elements are embedded inside 
+Docker containers, guaranteeing identical task execution across multiple environments. Microservices 
+architecture depends on this consistent behavior because different services operate independently. Merkel 
+(2014) explains that Docker achieves rapid application deployment through self-contained units,simplifying 
+complex application system management. Docker delivers exceptional resource efficiency, letting hosts 
+execute multiple containers simultaneously without imposition from traditional virtual machine overhead 
+(Pahl& Lee, 2015).
+
+(https://www.researchgate.net/profile/Venkata-Gudelli/publication/389590950_Containerization_Technologies_ECR_and_Docker_for_Microservices_Architecture/links/67c8888fe62c604a0dd5257c/Containerization-Technologies-ECR-and-Docker-for-Microservices-Architecture.pdf)
+
+
+ Docker, as an open source platform, provides abstraction layers that help the user to use this type of 
+virtualization. Due to its design, it offers a convenient way for users to create new 
+containers and make applications portable so that other users do not need to deal with 
+dependencies (also known as “dependency hell”) but at the same time, they do not 
+need to have a virtual machine running the application with all the associated costs 
+(Felter ym. 2014)
+
+https://www.theseus.fi/bitstream/handle/10024/123246/DockerThesis.pdf;jsessio  == Generell sehr gut für Docker!!

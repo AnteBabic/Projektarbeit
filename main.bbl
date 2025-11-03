@@ -1,0 +1,733 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{agilebusinessconsortium2014dsdm}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dfd419a8cefb2638908b932f7c115475}{%
+           family={{Agile Business Consortium}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Agile Business Consortium}%
+      }
+      \strng{namehash}{dfd419a8cefb2638908b932f7c115475}
+      \strng{fullhash}{dfd419a8cefb2638908b932f7c115475}
+      \strng{bibnamehash}{dfd419a8cefb2638908b932f7c115475}
+      \strng{authorbibnamehash}{dfd419a8cefb2638908b932f7c115475}
+      \strng{authornamehash}{dfd419a8cefb2638908b932f7c115475}
+      \strng{authorfullhash}{dfd419a8cefb2638908b932f7c115475}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{DSDM Agile Project Framework}
+      \field{year}{2014}
+    \endentry
+    \entry{apachePOI}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8b499b5be8914246b406785e1327dbb3}{%
+           family={{Apache Software Foundation}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{fullhash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{bibnamehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{authorbibnamehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{authornamehash}{8b499b5be8914246b406785e1327dbb3}
+      \strng{authorfullhash}{8b499b5be8914246b406785e1327dbb3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 3. September 2025}
+      \field{title}{Apache POI - Java API for Microsoft Documents}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://poi.apache.org/
+      \endverb
+      \verb{url}
+      \verb https://poi.apache.org/
+      \endverb
+    \endentry
+    \entry{ausbildung2025xml}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4e31c81dffca3c7b65f157981ad71c2e}{%
+           family={{Ausbildung in der IT}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e31c81dffca3c7b65f157981ad71c2e}
+      \strng{fullhash}{4e31c81dffca3c7b65f157981ad71c2e}
+      \strng{bibnamehash}{4e31c81dffca3c7b65f157981ad71c2e}
+      \strng{authorbibnamehash}{4e31c81dffca3c7b65f157981ad71c2e}
+      \strng{authornamehash}{4e31c81dffca3c7b65f157981ad71c2e}
+      \strng{authorfullhash}{4e31c81dffca3c7b65f157981ad71c2e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{Einfach erklärt: XML}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://ausbildung-in-der-it.de/lexikon/xml
+      \endverb
+      \verb{url}
+      \verb https://ausbildung-in-der-it.de/lexikon/xml
+      \endverb
+    \endentry
+    \entry{baeldung2025apachepoi}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d58b26d9f7600672080ebf3851115e45}{%
+           family={Baeldung},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d58b26d9f7600672080ebf3851115e45}
+      \strng{fullhash}{d58b26d9f7600672080ebf3851115e45}
+      \strng{bibnamehash}{d58b26d9f7600672080ebf3851115e45}
+      \strng{authorbibnamehash}{d58b26d9f7600672080ebf3851115e45}
+      \strng{authornamehash}{d58b26d9f7600672080ebf3851115e45}
+      \strng{authorfullhash}{d58b26d9f7600672080ebf3851115e45}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{Working with Microsoft Excel in Java using Apache POI}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.baeldung.com/java-microsoft-excel
+      \endverb
+      \verb{url}
+      \verb https://www.baeldung.com/java-microsoft-excel
+      \endverb
+    \endentry
+    \entry{elster_bw2025}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48c532626dd90725aba6ba90453656f6}{%
+           family={{ELSTER – Elektronische Steuererklärung Baden-Württemberg}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{48c532626dd90725aba6ba90453656f6}
+      \strng{fullhash}{48c532626dd90725aba6ba90453656f6}
+      \strng{bibnamehash}{48c532626dd90725aba6ba90453656f6}
+      \strng{authorbibnamehash}{48c532626dd90725aba6ba90453656f6}
+      \strng{authornamehash}{48c532626dd90725aba6ba90453656f6}
+      \strng{authorfullhash}{48c532626dd90725aba6ba90453656f6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 11.10.2025}
+      \field{title}{Grundsteuerformulare GW1, GW2, GW4 – Erläuterungen und Ausfüllhilfe}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.elster.de/eportal/start
+      \endverb
+      \verb{url}
+      \verb https://www.elster.de/eportal/start
+      \endverb
+    \endentry
+    \entry{horn2025jaxb}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4e457cfcf619c2ffffe33dfd41096ead}{%
+           family={Horn},
+           familyi={H\bibinitperiod},
+           given={Torsten},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4e457cfcf619c2ffffe33dfd41096ead}
+      \strng{fullhash}{4e457cfcf619c2ffffe33dfd41096ead}
+      \strng{bibnamehash}{4e457cfcf619c2ffffe33dfd41096ead}
+      \strng{authorbibnamehash}{4e457cfcf619c2ffffe33dfd41096ead}
+      \strng{authornamehash}{4e457cfcf619c2ffffe33dfd41096ead}
+      \strng{authorfullhash}{4e457cfcf619c2ffffe33dfd41096ead}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{JAXB zur XML-Verarbeitung mit Java}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://www.torsten-horn.de/techdocs/java-xml-jaxb.htm
+      \endverb
+      \verb{url}
+      \verb https://www.torsten-horn.de/techdocs/java-xml-jaxb.htm
+      \endverb
+    \endentry
+    \entry{innowise2024java}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f09c0f8619c87b9ec54f1b426355a7b8}{%
+           family={{Innowise Group}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f09c0f8619c87b9ec54f1b426355a7b8}
+      \strng{fullhash}{f09c0f8619c87b9ec54f1b426355a7b8}
+      \strng{bibnamehash}{f09c0f8619c87b9ec54f1b426355a7b8}
+      \strng{authorbibnamehash}{f09c0f8619c87b9ec54f1b426355a7b8}
+      \strng{authornamehash}{f09c0f8619c87b9ec54f1b426355a7b8}
+      \strng{authorfullhash}{f09c0f8619c87b9ec54f1b426355a7b8}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{Vor- und Nachteile der Java-Entwicklung}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://innowise.com/de/blog/benefits-and-drawbacks-of-java/
+      \endverb
+      \verb{url}
+      \verb https://innowise.com/de/blog/benefits-and-drawbacks-of-java/
+      \endverb
+    \endentry
+    \entry{kano1984quality}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b6a61db25efb0820f28b9e9a0a9a3dd7}{%
+           family={{Kano, Noriaki and Seraku, Nobuhiku and Takahashi, Fumio and Tsuji, Shinichi}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6a61db25efb0820f28b9e9a0a9a3dd7}
+      \strng{fullhash}{b6a61db25efb0820f28b9e9a0a9a3dd7}
+      \strng{bibnamehash}{b6a61db25efb0820f28b9e9a0a9a3dd7}
+      \strng{authorbibnamehash}{b6a61db25efb0820f28b9e9a0a9a3dd7}
+      \strng{authornamehash}{b6a61db25efb0820f28b9e9a0a9a3dd7}
+      \strng{authorfullhash}{b6a61db25efb0820f28b9e9a0a9a3dd7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of the Japanese Society for Quality Control}
+      \field{title}{Attractive Quality and Must-Be Quality}
+      \field{year}{1984}
+    \endentry
+    \entry{lzfd2025}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8f74e6aa0ef7885e4e3db59d1d718da4}{%
+           family={{Landeszentrum für Datenverarbeitung Baden-Württemberg}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f74e6aa0ef7885e4e3db59d1d718da4}
+      \strng{fullhash}{8f74e6aa0ef7885e4e3db59d1d718da4}
+      \strng{bibnamehash}{8f74e6aa0ef7885e4e3db59d1d718da4}
+      \strng{authorbibnamehash}{8f74e6aa0ef7885e4e3db59d1d718da4}
+      \strng{authornamehash}{8f74e6aa0ef7885e4e3db59d1d718da4}
+      \strng{authorfullhash}{8f74e6aa0ef7885e4e3db59d1d718da4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 04.09.2025}
+      \field{title}{IT-Dienstleistungen für die Steuerverwaltung Baden-Württemberg}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.lzfd-bw.de/
+      \endverb
+      \verb{url}
+      \verb https://www.lzfd-bw.de/
+      \endverb
+    \endentry
+    \entry{leffingwell2018safe}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ffc810de0e6ce775807e53b19d83de0b}{%
+           family={{Leffingwell, Dean}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{ffc810de0e6ce775807e53b19d83de0b}
+      \strng{fullhash}{ffc810de0e6ce775807e53b19d83de0b}
+      \strng{bibnamehash}{ffc810de0e6ce775807e53b19d83de0b}
+      \strng{authorbibnamehash}{ffc810de0e6ce775807e53b19d83de0b}
+      \strng{authornamehash}{ffc810de0e6ce775807e53b19d83de0b}
+      \strng{authorfullhash}{ffc810de0e6ce775807e53b19d83de0b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{SAFe 4.5 Reference Guide: Scaled Agile Framework for Lean Enterprises}
+      \field{year}{2018}
+    \endentry
+    \entry{perri2018escaping}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=95b27eceee4f091f66a863d1b2dddcdd}{%
+           family={{Melissa Perri}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{95b27eceee4f091f66a863d1b2dddcdd}
+      \strng{fullhash}{95b27eceee4f091f66a863d1b2dddcdd}
+      \strng{bibnamehash}{95b27eceee4f091f66a863d1b2dddcdd}
+      \strng{authorbibnamehash}{95b27eceee4f091f66a863d1b2dddcdd}
+      \strng{authornamehash}{95b27eceee4f091f66a863d1b2dddcdd}
+      \strng{authorfullhash}{95b27eceee4f091f66a863d1b2dddcdd}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Escaping the Build Trap: How Effective Product Management Creates Real Value}
+      \field{year}{2018}
+    \endentry
+    \entry{microsoft2025pivot}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7bfcdfba2f79a6f7eaf61eae9da024da}{%
+           family={{Microsoft Support}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{fullhash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{bibnamehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{authorbibnamehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{authornamehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{authorfullhash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{Erstellen eines PivotCharts}
+      \verb{urlraw}
+      \verb https://support.microsoft.com/de-de/office/erstellen-eines-pivotcharts-c1b1e057-6990-4c38-b52b-8255538e7b1c
+      \endverb
+      \verb{url}
+      \verb https://support.microsoft.com/de-de/office/erstellen-eines-pivotcharts-c1b1e057-6990-4c38-b52b-8255538e7b1c
+      \endverb
+    \endentry
+    \entry{microsoft2025xml}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7bfcdfba2f79a6f7eaf61eae9da024da}{%
+           family={{Microsoft Support}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{fullhash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{bibnamehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{authorbibnamehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{authornamehash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \strng{authorfullhash}{7bfcdfba2f79a6f7eaf61eae9da024da}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{XML für Anfänger}
+      \verb{urlraw}
+      \verb https://support.microsoft.com/de-de/office/xml-f%C3%BCr-anf%C3%A4nger-a87d234d-4c2e-4409-9cbc-45e4eb857d44
+      \endverb
+      \verb{url}
+      \verb https://support.microsoft.com/de-de/office/xml-f%C3%BCr-anf%C3%A4nger-a87d234d-4c2e-4409-9cbc-45e4eb857d44
+      \endverb
+    \endentry
+    \entry{fm_bw_elnr2025}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1cf39ff50f19a9a17e819180d8e8025d}{%
+           family={{Ministerium der Finanzen Baden-Württemberg}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cf39ff50f19a9a17e819180d8e8025d}
+      \strng{fullhash}{1cf39ff50f19a9a17e819180d8e8025d}
+      \strng{bibnamehash}{1cf39ff50f19a9a17e819180d8e8025d}
+      \strng{authorbibnamehash}{1cf39ff50f19a9a17e819180d8e8025d}
+      \strng{authornamehash}{1cf39ff50f19a9a17e819180d8e8025d}
+      \strng{authorfullhash}{1cf39ff50f19a9a17e819180d8e8025d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 11.10.2025}
+      \field{title}{Grundsteuerreform in Baden-Württemberg – Elektronische Grundsteuererklärung}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://fm.baden-wuerttemberg.de/de/steuern/grundsteuer/
+      \endverb
+      \verb{url}
+      \verb https://fm.baden-wuerttemberg.de/de/steuern/grundsteuer/
+      \endverb
+    \endentry
+    \entry{ofdBW2025}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c1792a8525540fa7cb4576ea55b0cc8}{%
+           family={{Oberfinanzdirektion Baden-Württemberg}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{fullhash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{bibnamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authorbibnamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authornamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authorfullhash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \field{extraname}{1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 04.09.2025}
+      \field{title}{Die Oberfinanzdirektion Baden-Württemberg – Aufgaben und Organisation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ofd-bw.de/
+      \endverb
+      \verb{url}
+      \verb https://www.ofd-bw.de/
+      \endverb
+    \endentry
+    \entry{grundsteuerneu2025}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c1792a8525540fa7cb4576ea55b0cc8}{%
+           family={{Oberfinanzdirektion Baden-Württemberg}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{fullhash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{bibnamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authorbibnamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authornamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authorfullhash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 04.09.2025}
+      \field{title}{Grundsteuerreform 2025 – Umsetzung durch EDV 211}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ofd-bw.de/grundsteuerneu
+      \endverb
+      \verb{url}
+      \verb https://www.ofd-bw.de/grundsteuerneu
+      \endverb
+    \endentry
+    \entry{konsens2025}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c1792a8525540fa7cb4576ea55b0cc8}{%
+           family={{Oberfinanzdirektion Baden-Württemberg}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{fullhash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{bibnamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authorbibnamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authornamehash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \strng{authorfullhash}{3c1792a8525540fa7cb4576ea55b0cc8}
+      \field{extraname}{3}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 04.09.2025}
+      \field{title}{Projekt KONSENS – Einheitliche Softwarelösung für Finanzämter}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ofd-bw.de/konsens
+      \endverb
+      \verb{url}
+      \verb https://www.ofd-bw.de/konsens
+      \endverb
+    \endentry
+    \entry{jaxb}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d51288dc67d9f5e0330d927a009e208b}{%
+           family={{Oracle Corporation}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{d51288dc67d9f5e0330d927a009e208b}
+      \strng{fullhash}{d51288dc67d9f5e0330d927a009e208b}
+      \strng{bibnamehash}{d51288dc67d9f5e0330d927a009e208b}
+      \strng{authorbibnamehash}{d51288dc67d9f5e0330d927a009e208b}
+      \strng{authornamehash}{d51288dc67d9f5e0330d927a009e208b}
+      \strng{authorfullhash}{d51288dc67d9f5e0330d927a009e208b}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 3. September 2025}
+      \field{title}{Java Architecture for XML Binding (JAXB)}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://docs.oracle.com/javase/tutorial/jaxb/
+      \endverb
+      \verb{url}
+      \verb https://docs.oracle.com/javase/tutorial/jaxb/
+      \endverb
+    \endentry
+    \entry{rentrop2017java}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f627846e120fe83424e104d9fcda5a87}{%
+           family={Rentrop},
+           familyi={R\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{fullhash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{bibnamehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{authorbibnamehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{authornamehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{authorfullhash}{f627846e120fe83424e104d9fcda5a87}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{Programmieren mit Java: Plattformunabhängig Entwickeln}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.datacenter-insider.de/java-plattformunabhaengige-anwendungsentwicklung-a-381e431b5364e32f1e32c9d9a8c65bf3/
+      \endverb
+      \verb{url}
+      \verb https://www.datacenter-insider.de/java-plattformunabhaengige-anwendungsentwicklung-a-381e431b5364e32f1e32c9d9a8c65bf3/
+      \endverb
+    \endentry
+    \entry{datacenterJava}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f627846e120fe83424e104d9fcda5a87}{%
+           family={Rentrop},
+           familyi={R\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{fullhash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{bibnamehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{authorbibnamehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{authornamehash}{f627846e120fe83424e104d9fcda5a87}
+      \strng{authorfullhash}{f627846e120fe83424e104d9fcda5a87}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 3. September 2025}
+      \field{title}{Programmieren mit Java: Plattformunabhängig Entwickeln}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.datacenter-insider.de/java-plattformunabhaengige-anwendungsentwicklung-a-381e431b5364e32f1e32c9d9a8c65bf3/
+      \endverb
+      \verb{url}
+      \verb https://www.datacenter-insider.de/java-plattformunabhaengige-anwendungsentwicklung-a-381e431b5364e32f1e32c9d9a8c65bf3/
+      \endverb
+    \endentry
+    \entry{davenport2007competing}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8e041b1ebe26002cc7a4090792fb646a}{%
+           family={{Thomas H. Davenport and Jeanne G. Harris}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard Business School Press}%
+      }
+      \strng{namehash}{8e041b1ebe26002cc7a4090792fb646a}
+      \strng{fullhash}{8e041b1ebe26002cc7a4090792fb646a}
+      \strng{bibnamehash}{8e041b1ebe26002cc7a4090792fb646a}
+      \strng{authorbibnamehash}{8e041b1ebe26002cc7a4090792fb646a}
+      \strng{authornamehash}{8e041b1ebe26002cc7a4090792fb646a}
+      \strng{authorfullhash}{8e041b1ebe26002cc7a4090792fb646a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Beschreibt Excel als Standard-Tool für Datenaufbereitung und -eingabe in Unternehmen}
+      \field{title}{Competing on Analytics}
+      \field{year}{2007}
+    \endentry
+    \entry{ullenboom2015java8}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=961b512517a6b772a15931f9be557e95}{%
+           family={Ullenboom},
+           familyi={U\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Rheinwerk Verlag}%
+      }
+      \strng{namehash}{961b512517a6b772a15931f9be557e95}
+      \strng{fullhash}{961b512517a6b772a15931f9be557e95}
+      \strng{bibnamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authorbibnamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authornamehash}{961b512517a6b772a15931f9be557e95}
+      \strng{authorfullhash}{961b512517a6b772a15931f9be557e95}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online-Version}
+      \field{title}{Java SE 8 Standard-Bibliothek}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://openbook.rheinwerk-verlag.de/java8/
+      \endverb
+      \verb{url}
+      \verb https://openbook.rheinwerk-verlag.de/java8/
+      \endverb
+    \endentry
+    \entry{vogt2025excel}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d60262c48d69e6e948869f1cad127a28}{%
+           family={Vogt},
+           familyi={V\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d60262c48d69e6e948869f1cad127a28}
+      \strng{fullhash}{d60262c48d69e6e948869f1cad127a28}
+      \strng{bibnamehash}{d60262c48d69e6e948869f1cad127a28}
+      \strng{authorbibnamehash}{d60262c48d69e6e948869f1cad127a28}
+      \strng{authornamehash}{d60262c48d69e6e948869f1cad127a28}
+      \strng{authorfullhash}{d60262c48d69e6e948869f1cad127a28}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{Excel-Grundlagen – Kursunterlagen}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://userpage.fu-berlin.de/~vodo/excelkurs/Folien%20-%20Excel-Grundlagen.pdf
+      \endverb
+      \verb{url}
+      \verb https://userpage.fu-berlin.de/~vodo/excelkurs/Folien%20-%20Excel-Grundlagen.pdf
+      \endverb
+    \endentry
+    \entry{wende2025xml}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=417c7c059fcb8b6bacbe2d4225301de8}{%
+           family={Wende},
+           familyi={W\bibinitperiod},
+           given={Matthäus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{417c7c059fcb8b6bacbe2d4225301de8}
+      \strng{fullhash}{417c7c059fcb8b6bacbe2d4225301de8}
+      \strng{bibnamehash}{417c7c059fcb8b6bacbe2d4225301de8}
+      \strng{authorbibnamehash}{417c7c059fcb8b6bacbe2d4225301de8}
+      \strng{authornamehash}{417c7c059fcb8b6bacbe2d4225301de8}
+      \strng{authorfullhash}{417c7c059fcb8b6bacbe2d4225301de8}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Abgerufen am 03.09.2025}
+      \field{title}{XML: Definition, Struktur und Anwendungsbereiche}
+      \verb{urlraw}
+      \verb https://www.matthaeus-wende.de/lexikon/artikel/xml/
+      \endverb
+      \verb{url}
+      \verb https://www.matthaeus-wende.de/lexikon/artikel/xml/
+      \endverb
+    \endentry
+    \entry{w3cXML}{manual}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66c3509f57565d7fbe270a57a403004c}{%
+           family={{World Wide Web Consortium (W3C)}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{fullhash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{bibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorbibnamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authornamehash}{66c3509f57565d7fbe270a57a403004c}
+      \strng{authorfullhash}{66c3509f57565d7fbe270a57a403004c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Offizielle Spezifikation von XML als plattformunabhängiges, strukturiertes Format für den Datenaustausch}
+      \field{title}{{Extensible Markup Language (XML) 1.0 (Fifth Edition)}}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/xml/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/xml/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

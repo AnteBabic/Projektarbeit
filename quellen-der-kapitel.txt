@@ -1,0 +1,55 @@
+#########################################################
+							Quellen
+#########################################################
+
+------------------------------------------------
+				Grundlagen:
+------------------------------------------------
+
+Docker: 
+	containerisation:
+		[X] https://www.researchgate.net/profile/Venkata-Gudelli/publication/389590950_Containerization_Technologies_ECR_and_Docker_for_Microservices_Architecture/links/67c8888fe62c604a0dd5257c/Containerization-Technologies-ECR-and-Docker-for-Microservices-Architecture.pdf
+		[X] https://www.theseus.fi/bitstream/handle/10024/123246/DockerThesis.pdf;jsessio
+		[X] https://books.google.de/books?hl=de&lr=&id=rI5mEQAAQBAJ&oi=fnd&pg=PT9&dq=containerization+basics&ots=Xfb-6z6150&sig=c5wkITm_CQTiJe3sVZWcXWiK1os&redir_esc=y#v=onepage&q&f=false
+		[X] Grundlagen Docker - pdf im Ordner
+
+	[X] https://books.google.de/books?hl=de&lr=&id=4xQKBAAAQBAJ&oi=fnd&pg=PA1&dq=containerization+docker&ots=wy7E9z1fDQ&sig=AtGqoolwDJwdjuqJhoLrw3QrGcU&redir_esc=y#v=onepage&q=containerization%20docker&f=false		
+	[X]	https://datascientest.com/de/docker-was-ist-das-denn-und-wie-wird-es-benutzt
+	[X]	https://docs.docker.com/get-started/docker-overview/
+	[X] https://www.researchgate.net/profile/Harrison-Bhatti/publication/318816158_An_Introduction_to_Docker_and_Analysis_of_its_Performance/links/61facc0c007fb504472fd6c7/An-Introduction-to-Docker-and-Analysis-of-its-Performance.pdf
+	[X] https://books.google.de/books?hl=de&lr=&id=wpYpCwAAQBAJ&oi=fnd&pg=PP1&dq=docker&ots=QiJ5uQlTbP&sig=TZPGUFCdySviOBV2h56alBpIxx4&redir_esc=y#v=onepage&q=docker&f=false
+	[X] Grundlagen Docker - PDF im Ordner
+
+Spring Boot:
+	[ ] https://www.assets.dpunkt.de/leseproben/14020/Leseprobe.pdf
+	[ ] https://books.google.de/books?hl=de&lr=&id=RQUaEAAAQBAJ&oi=fnd&pg=PR4&dq=Spring+Boot+&ots=acMOQm5vLV&sig=iqglBerQHsRSBuvLxDQVBB-yX_4&redir_esc=y#v=onepage&q=Spring%20Boot&f=false
+	[ ] https://mackvord.github.io/PDF/spring-boot-reference.pdf
+	[ ] Beginning SPring Boot - PDF im Ordner
+
+React:
+	[ ] React Grundlagen Springer - PDF im Ordner
+	[ ] Hartmann-Zeigermann - PDF im Ordner
+	[ ] https://books.google.de/books?hl=de&lr=&id=NZCKCgAAQBAJ&oi=fnd&pg=PR6&dq=react+basics&ots=KCwqSrAx-d&sig=JEz_A5yNZg0LxHGF-xPHm1FgMbg&redir_esc=y#v=onepage&q=react%20basics&f=false
+	[ ] https://new-web.net/docs/uploads/mastering-react-compressed.pdf
+
+Relationale Datenbanken:
+	[ ] adams2023 - PDF im Ordner
+	[ ] Entwurf und ... - Buch aus der Firma
+	[ ] relationale Datenbanken von der Theorie... - PDF im Ordner
+	[ ] https://www.ibm.com/de-de/think/topics/relational-databases
+	[ ] https://books.google.de/books?hl=de&lr=&id=PZomBgAAQBAJ&oi=fnd&pg=PP9&dq=relationale+datenbank&ots=Lgm9cEJ14v&sig=zk_Hdl94wPY9qX9oyTLH_RYIBM0&redir_esc=y#v=onepage&q=relationale%20datenbank&f=false
+	[ ] https://www.degruyterbrill.com/document/doi/10.1515/fs-2022-0036/html
+
+	gestern verwendetfür Datenmodellierung:
+	https://www.ibm.com/de-de/topics/data-modeling
+	https://arxiv.org/pdf/2109.14717
+	https://biblioteca.unisced.edu.mz/pdfjs/web/viewer.html?file=https://biblioteca.unisced.edu.mz/bitstream/123456789/2668/1/Database-Design-2-Ed.pdf
+	https://www.datacamp.com/de/blog/data-modeling?dc_referrer=https%3A%2F%2Fwww.bing.com%2F
+	und Buch Enwturf und Ver....
+
+Frameworks und Bibliotheken
+	[ ] https://www.freecodecamp.org/news/frameworks-vs-libraries/?utm_source=chatgpt.com
+	[ ] https://en.wikipedia.org/wiki/Software_framework
+	[ ] Software_Frameworks_Architectural_and_Design_Patte im Ordner
+	[ ] https://www.greasyguide.com/development/frameworks-vs-libraries-a-guide-for-software-architects/?utm_source=chatgpt.com
+	[ ] Developing_a_Web_Framework_Based_on_Inversion_of_C im Ordner

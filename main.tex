@@ -1,0 +1,194 @@
+%	ACHTUNG: Für das Erstellen des Literaturverzeichnisses wird das modernere Paket biblatex
+%			 in Kombination mit biber verwendet -- nicht mehr das ältere BibTex!
+% 			 Bitte stellen Sie ggf. Ihre TeX-Umgebung
+% 			 entsprechend ein (z.B. TeXStudio: Einstellungen --> Erzeugen --> Standard Bibliographieprogramm: biber)
+%
+%bei TexMaker: Optionen -> TexMaker konfigurieren -> bei Bib(la)Tex muss biber.exe ausgewählt werden(befindet sich bei MikTex im Ordner)
+
+\documentclass[
+	12pt,
+	top=25mm,
+	bottom=20mm,
+	left=35mm,
+	right=25mm,
+	DIV=12,
+	headinclude=on,
+	footinclude=off,
+	parskip=half,
+	bibliography=totoc,
+	listof=entryprefix,
+	toc=listof,
+	pointlessnumbers,
+	plainfootsepline
+]{scrreprt}
+
+
+	\oddsidemargin = 0pt %für Seitenrand links kleiner
+	\marginparsep = 16pt %für Seitenrand rechts größer
+
+%	Konfigurationsdatei einziehen
+\input{config}
+
+\begin{document}
+
+%% BITTE GEBEN SIE HIER DEN TITEL UND DIE AUTORIN / DEN AUTOR DER ARBEIT AN!
+%% DIESE INFORMATIONEN _MÜSSEN_ GESETZT SEIN, UM TITELBLATT, ABSTRACT UND
+%% EIGENSTÄNDIGKEITSERKLÄRUNG AUTOMATISCH ANZUPASSEN!
+
+\TitelDerArbeit{Entwicklung eines Testfallgenerators für verschiedene Eingangsformate in der Grundsteuer}
+\AutorDerArbeit{Ante Babic}
+\Firma{Oberfinanzdirektion Baden-Württemberg}
+\Kurs{TINF24B2}
+\newcommand{\Studiengang}{Informatik / Angewandte Informatik}
+\newcommand{\AbgabeDatum}{29. September 2025}
+
+\onehalfspacing %1,5-zeiliger Abstand zwischen allen Zeilen
+
+\input{titlepage}
+
+
+
+%--------------------------------
+% Verzeichnisse - nicht benötige Verzeichnisse bitte auskommentieren / löschen.
+%--------------------------------
+\pagenumbering{gobble}
+% Ehrenwörtliche Erklärung ewerkl.tex einziehen
+\input{erklaerung}
+
+%   Sperrvermerk
+\input{sperrvermerk}
+
+%	Kurzfassung
+%\input{abstract}
+\pagenumbering{Roman} % Römische Seitennummerierung
+\normalfont
+%	Inhaltsverzeichnis
+\tableofcontents
+
+\clearpage
+\ohead{Vorwort}
+\input{vorwort.tex}
+%	Vorwort
+%\input{vorwort}
+
+%	Abbildungsverzeichnis
+\listoffigures
+
+%	Tabellenverzeichnis
+%\listoftables
+
+%	Listingsverzeichnis
+%\lstlistoflistings
+
+% 	Algorithmenverzeichnis
+%\listofalgorithms
+
+% 	Abkürzungsverzeichnis (siehe Datei acronyms.tex!)
+\input{acronyms} 
+\ohead{Acronyms} % Neue Header-Definition
+
+% Glossar
+%\input{glossar}
+%\ohead{Glossar}
+
+%-------------------------s-------
+% Start des Textteils der Arbeit
+%--------------------------------
+\clearpage
+\ihead{\chaptername~\thechapter} % Neue Header-Definition (inner header)
+\ohead{\headmark} % Neue Header-Definition (outer header)
+\pagenumbering{arabic}  % Arabische Seitenzahlen
+
+%	Einleitung
+\input{einleitung}
+
+%	Grundlagen
+\input{grundlagen}
+
+%\input{anforderungen}
+\input{anforderungen.tex}
+%	Umsetzung
+%\include{konzeption}
+\input{implementierung.tex}
+%\include{prototyp}
+%\input{tests.tex}
+%\input{evaluation}
+%	Fazit und Ausblick
+\input{fazit}
+
+%% --- Beginn Anhang ---
+%\begingroup
+%\let\cleardoublepage\clearpage % verhindert leere Seite
+%\clearpage
+%
+%\pagenumbering{Roman} % römische Seitenzahlen im Anhang
+%\setcounter{page}{6}
+%\appendix
+%\ihead{\appendixname~\thechapter} % Kopfzeile anpassen
+%
+%\input{appendix}
+%
+%\endgroup
+%% --- Ende Anhang ---
+
+% --- Beginn Anhang ---
+%\clearpage
+%\KOMAoptions{open=any} % stellt sicher, dass kein Kapitel gezwungen rechts startet
+%\appendix
+%
+%% Kopfzeile für Anhang
+%\ihead{\appendixname~\thechapter}
+%\ohead{\headmark}
+%
+%% Falls KOMA oder fancyhdr noch eine leere Seite erzeugt:
+%\makeatletter
+%\renewcommand*{\chapter}{%
+%  \if@openright\ifodd\value{page}\else\hbox{}\newpage\fi\fi
+%  \thispagestyle{headings}%
+%  \global\@topnum\z@
+%  \@afterindentfalse
+%  \secdef\@chapter\@schapter}
+%\makeatother
+%
+%% römische Nummerierung im Anhang
+%\pagenumbering{Roman}
+%
+%% Jetzt den Anhang einbinden
+%\input{appendix}
+% --- Ende Anhang ---
+
+
+\clearpage
+
+% Der Anhang beginnt hier - jedes Kapitel wird alphabetisch aufgezählt. (Anhang A, B usw.)
+\pagenumbering{Roman} % Arabische Seitenzahlen
+\setcounter{page}{6}
+\appendix
+\ihead{\appendixname~\thechapter} % Neue Header-Definition
+
+% appendix.tex einziehen
+\input{appendix}
+\ihead{\appendixname~\thechapter} % Neue Header-Definition
+
+%Beigabenverzeichnis
+%\ihead{Beigaben}
+%\input{beigaben}
+
+
+
+
+
+
+%Literaturverzeichnis
+\ihead{Literaturverzeichnis}
+%\printbibliography[title=Literaturverzeichnis] %Standard aus Vorlage
+\printbibliography[title=Literaturverzeichnis]
+%\printbibliography[heading=bibintoc, type=book, title={Literaturverzeichnis}]
+%\printbibliography[heading=bibintoc, type=online, title={Elektronische Quellen}]
+%\printbibliography[heading=bibintoc, type=article, title={Artikel}]
+%\printbibliography[heading=bibintoc, type=thesis, title={Theses}]
+
+
+\cleardoublepage
+
+\end{document}
